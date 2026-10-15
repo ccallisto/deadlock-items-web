@@ -1,0 +1,52 @@
+/* Shared by index.html (quiz) and items.html (item list). */
+:root {
+  --bg: #14110f;
+  --panel: #1f1a17;
+  --panel-2: #2a2420;
+  --text: #ece4d8;
+  --muted: #a3988a;
+  --border: #3a322c;
+  --good: #4caf6a;
+  --bad: #d0504a;
+  --weapon: #d8892f;
+  --vitality: #6fae3e;
+  --spirit: #a36ee0;
+  --page-width: 1100px;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+main { max-width: var(--page-width); margin: 0 auto; padding: 20px 16px 60px; }
+[hidden] { display: none !important; }
+
+/* Top bar: identical markup and position on every page. */
+.topbar { background: var(--panel); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 10; }
+.topbar .bar {
+  max-width: var(--page-width); margin: 0 auto; padding: 0 16px; height: 56px;
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+}
+.topbar h1 { font-size: 18px; margin: 0; letter-spacing: .02em; white-space: nowrap; }
+.topbar h1 a { color: var(--text); text-decoration: none; }
+.topbar nav { display: flex; gap: 4px; }
+.topbar nav a {
+  color: var(--muted); text-decoration: none; padding: 6px 12px; border-radius: 8px; white-space: nowrap;
+}
+.topbar nav a:hover { color: var(--text); background: var(--panel-2); }
+.topbar nav a[aria-current] { color: var(--text); background: var(--panel-2); }
+
+.toolbar { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; justify-content: space-between; margin-bottom: 18px; }
+.filters { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip {
+  border: 1px solid var(--border); background: var(--panel); color: var(--muted);
+  padding: 6px 12px; border-radius: 999px; cursor: pointer; font: inherit; font-size: 14px;
+}
+.chip[aria-pressed="true"] { color: var(--text); background: var(--panel-2); border-color: var(--chip, var(--text)); }
+.chip[data-cat="weapon"] { --chip: var(--weapon); }
+.chip[data-cat="vitality"] { --chip: var(--vitality); }
+.chip[data-cat="spirit"] { --chip: var(--spirit); }
+
+.error { background: var(--panel); border: 1px solid var(--bad); border-radius: 10px; padding: 16px; margin-top: 16px; }

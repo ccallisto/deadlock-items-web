@@ -1,0 +1,6554 @@
+[
+  {
+    "id": "upgrade_extra_charge",
+    "name": "Extra Charge",
+    "category": "spirit",
+    "tier": 1,
+    "cost": 800,
+    "mode": "standard",
+    "active": false,
+    "description": "",
+    "description_html": "",
+    "stats": [
+      {
+        "key": "BonusSpiritForChargedAbilities",
+        "label": "Bonus Spirit Power for Charged Abilities",
+        "value": "7"
+      },
+      {
+        "key": "BonusAbilityCharges",
+        "label": "Bonus Ability Charges",
+        "value": "+1"
+      }
+    ],
+    "icon": "spirit/extra_charge_psd.png"
+  },
+  {
+    "id": "upgrade_improved_spirit",
+    "name": "Extra Spirit",
+    "category": "spirit",
+    "tier": 1,
+    "cost": 800,
+    "mode": "standard",
+    "active": false,
+    "description": "",
+    "description_html": "",
+    "stats": [
+      {
+        "key": "TechPower",
+        "label": "Spirit Power",
+        "value": "+10"
+      }
+    ],
+    "icon": "spirit/extra_spirit_psd.png"
+  },
+  {
+    "id": "upgrade_goose_egg",
+    "name": "Golden Goose Egg",
+    "category": "spirit",
+    "tier": 1,
+    "cost": 800,
+    "mode": "standard",
+    "active": true,
+    "description": "Hatch the egg, gaining souls and permanent buffs.\n\nThe value of the egg grows the longer you hold onto it.\n\nGain a permanent buff per 80 Souls accrued when hatched.",
+    "description_html": "Hatch the egg, gaining <span class=\"highlight\">souls</span> and <span class=\"highlight\">permanent buffs</span>.<br><br>The value of the egg grows the longer you hold onto it.<br><br><span class=\"diminish\">Gain a permanent buff per 80 Souls accrued when hatched.",
+    "stats": [
+      {
+        "key": "BonusSprintSpeed",
+        "label": "Sprint Speed",
+        "value": "+1m"
+      },
+      {
+        "key": "OutOfCombatHealthRegen",
+        "label": "Out of Combat Regen",
+        "value": "+1"
+      },
+      {
+        "key": "OutgoingDamagePenaltyPercent",
+        "label": "Damage Penalty",
+        "value": "-15%"
+      },
+      {
+        "key": "BonusGoldPerMinute",
+        "label": "Soul Value per Minute",
+        "value": "80"
+      }
+    ],
+    "icon": "spirit/goose_egg_psd.png"
+  },
+  {
+    "id": "upgrade_magic_burst",
+    "name": "Mystic Burst",
+    "category": "spirit",
+    "tier": 1,
+    "cost": 800,
+    "mode": "standard",
+    "active": false,
+    "description": "Charges up over time with Bonus Spirit Damage, causing abilities dealing more than 80 damage to deal additional damage.",
+    "description_html": "Charges up over time with Bonus Spirit Damage, causing abilities dealing more than <span class=\"highlight\">80</span> damage to deal additional damage.",
+    "stats": [
+      {
+        "key": "Damage",
+        "label": "Damage",
+        "value": "40"
+      },
+      {
+        "key": "AbilityChargeUpTime",
+        "label": "Charge-Up Time",
+        "value": "14s"
+      }
+    ],
+    "icon": "spirit/mystic_burst_psd.png"
+  },
+  {
+    "id": "upgrade_magic_reach",
+    "name": "Mystic Expansion",
+    "category": "spirit",
+    "tier": 1,
+    "cost": 800,
+    "mode": "standard",
+    "active": false,
+    "description": "Imbue an ability to increase its range and effect radius.",
+    "description_html": "Imbue an ability to increase its <span class=\"highlight\">range</span> and <span class=\"highlight\">effect radius</span>.",
+    "stats": [
+      {
+        "key": "TechRangeMultiplier",
+        "label": "Ability Range",
+        "value": "+20%"
+      }
+    ],
+    "icon": "spirit/mystic_reach_psd.png"
+  },
+  {
+    "id": "upgrade_mystic_regeneration",
+    "name": "Mystic Regeneration",
+    "category": "spirit",
+    "tier": 1,
+    "cost": 800,
+    "mode": "standard",
+    "active": false,
+    "description": "Dealing Spirit Damage to enemy Heroes grants you Bonus Regen. Stacks when dealing damage to different heroes.",
+    "description_html": "Dealing Spirit Damage to enemy Heroes grants you Bonus Regen. Stacks when dealing damage to different heroes.",
+    "stats": [
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+50"
+      },
+      {
+        "key": "Regeneration",
+        "label": "Regeneration",
+        "value": "4 HP/s"
+      },
+      {
+        "key": "RegenerationDuration",
+        "label": "Regeneration Duration",
+        "value": "7s"
+      }
+    ],
+    "icon": "spirit/mystic_regen_psd.png"
+  },
+  {
+    "id": "upgrade_withering_whip",
+    "name": "Rusted Barrel",
+    "category": "spirit",
+    "tier": 1,
+    "cost": 800,
+    "mode": "standard",
+    "active": true,
+    "description": "Target an enemy to reduce their Fire Rate and Bullet Resistance.",
+    "description_html": "Target an enemy to reduce their <span class=\"highlight\">Fire Rate</span> and <span class=\"highlight\">Bullet Resistance</span>.",
+    "stats": [
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+60"
+      },
+      {
+        "key": "BonusSprintSpeed",
+        "label": "Sprint Speed",
+        "value": "+0.5m"
+      },
+      {
+        "key": "AbilityCastRange",
+        "label": "Cast Range",
+        "value": "32m"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "5s"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "16s"
+      },
+      {
+        "key": "FireRateSlow",
+        "label": "Fire Rate",
+        "value": "32%"
+      },
+      {
+        "key": "BulletArmorReduction",
+        "label": "Bullet Resist",
+        "value": "-8%"
+      }
+    ],
+    "icon": "spirit/rusted_barrel_psd.png"
+  },
+  {
+    "id": "upgrade_acolytes_glove",
+    "name": "Spirit Strike",
+    "category": "spirit",
+    "tier": 1,
+    "cost": 800,
+    "mode": "standard",
+    "active": false,
+    "description": "When you perform a Light or Heavy Melee attack against a hero, deal extra Spirit Damage with the attack and reduce the target's Spirit Resist.\n\nCooldown is 2x longer for Light Melee hits.",
+    "description_html": "When you perform a <span class=\"highlight\">Light or Heavy Melee</span> attack against a hero, deal extra Spirit Damage with the attack and reduce the target's <span class=\"highlight\">Spirit Resist</span>.<span class=\"diminish\"><br><br>Cooldown is 2x longer for Light Melee hits.</span>",
+    "stats": [
+      {
+        "key": "SpiritDamage",
+        "label": "Spirit Damage",
+        "value": "40"
+      },
+      {
+        "key": "TechArmorDamageReduction",
+        "label": "Spirit Resist",
+        "value": "-6%"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "6s"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "8s"
+      }
+    ],
+    "icon": "spirit/spirit_strike_psd.png"
+  },
+  {
+    "id": "upgrade_arcane_surge",
+    "name": "Arcane Surge",
+    "category": "spirit",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": false,
+    "description": "After you Dash-Jump, the next ability you use within ArcaneSurgeWindows will have bonus Range, Duration, and Spirit Power.",
+    "description_html": "After you <span class=\"highlight\">Dash-Jump</span>, the <span class=\"highlight\">next ability you use</span> within ArcaneSurgeWindows will have bonus <span class=\"highlight\">Range, Duration,</span> and <span class=\"highlight\">Spirit Power</span>.",
+    "stats": [
+      {
+        "key": "Stamina",
+        "label": "Stamina",
+        "value": "+1"
+      },
+      {
+        "key": "StaminaCooldownReduction",
+        "label": "Stamina Recovery",
+        "value": "+12%"
+      },
+      {
+        "key": "TechRangeMultiplierBuff",
+        "label": "Ability Range",
+        "value": "+12%"
+      },
+      {
+        "key": "BonusAbilityDurationPercent",
+        "label": "Ability Duration",
+        "value": "+15%"
+      },
+      {
+        "key": "SpiritPower",
+        "label": "Spirit Power",
+        "value": "20"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "7s"
+      }
+    ],
+    "icon": "spirit/arcane_surge_psd.png"
+  },
+  {
+    "id": "upgrade_bullet_resist_shredder",
+    "name": "Bullet Resist Shredder",
+    "category": "spirit",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": false,
+    "description": "Reduces Bullet Resist on enemies when you deal Spirit Damage.",
+    "description_html": "Reduces <span class=\"highlight\">Bullet Resist</span> on enemies when you deal Spirit Damage.",
+    "stats": [
+      {
+        "key": "BulletResist",
+        "label": "Bullet Resist",
+        "value": "+9%"
+      },
+      {
+        "key": "BaseAttackDamagePercent",
+        "label": "Weapon Damage",
+        "value": "+9%"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "8s"
+      },
+      {
+        "key": "BulletArmorReduction",
+        "label": "Bullet Resist",
+        "value": "-10%"
+      }
+    ],
+    "icon": "spirit/bullet_resist_shredder_psd.png"
+  },
+  {
+    "id": "upgrade_cold_front",
+    "name": "Cold Front",
+    "category": "spirit",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": true,
+    "description": "Release an expanding ice blast that deals Spirit Damage and Slows targets it hits.",
+    "description_html": "Release an expanding ice blast that deals Spirit Damage and <span class=\"highlight\">Slows</span> targets it hits.",
+    "stats": [
+      {
+        "key": "TechResist",
+        "label": "Spirit Resist",
+        "value": "+6%"
+      },
+      {
+        "key": "Damage",
+        "label": "Damage",
+        "value": "95"
+      },
+      {
+        "key": "MovementSpeedSlow",
+        "label": "Move Speed",
+        "value": "48%"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "4s"
+      },
+      {
+        "key": "EndRadius",
+        "label": "End Radius",
+        "value": "10m"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "25s"
+      }
+    ],
+    "icon": "spirit/cold_front_psd.png"
+  },
+  {
+    "id": "upgrade_magic_tempo",
+    "name": "Compress Cooldown",
+    "category": "spirit",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": false,
+    "description": "Imbue an ability to reduce its Cooldown.",
+    "description_html": "Imbue an ability to reduce its <span class=\"highlight\">Cooldown</span>.",
+    "stats": [
+      {
+        "key": "CooldownReduction",
+        "label": "Ability Cooldown Reduction",
+        "value": "+18%"
+      }
+    ],
+    "icon": "spirit/improved_cooldown_psd.png"
+  },
+  {
+    "id": "upgrade_arcane_extension",
+    "name": "Duration Extender",
+    "category": "spirit",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": false,
+    "description": "Imbue an ability to increase its Duration.",
+    "description_html": "Imbue an ability to increase its <span class=\"highlight\">Duration</span>.",
+    "stats": [
+      {
+        "key": "BonusAbilityDurationPercent",
+        "label": "Ability Duration",
+        "value": "+22%"
+      }
+    ],
+    "icon": "spirit/duration_extender_psd.png"
+  },
+  {
+    "id": "upgrade_soaring_spirit",
+    "name": "Improved Spirit",
+    "category": "spirit",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": false,
+    "description": "",
+    "description_html": "",
+    "stats": [
+      {
+        "key": "OutOfCombatHealthRegen",
+        "label": "Out of Combat Regen",
+        "value": "+1.5"
+      },
+      {
+        "key": "TechPower",
+        "label": "Spirit Power",
+        "value": "+18"
+      }
+    ],
+    "icon": "spirit/improved_spirit_psd.png"
+  },
+  {
+    "id": "upgrade_magic_slow",
+    "name": "Mystic Slow",
+    "category": "spirit",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": false,
+    "description": "When the target takes Spirit Damage, they have their Move Speed reduced.",
+    "description_html": "When the target takes Spirit Damage, they have their <span class=\"highlight\">Move Speed</span> reduced.",
+    "stats": [
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+50"
+      },
+      {
+        "key": "BonusSprintSpeed",
+        "label": "Sprint Speed",
+        "value": "+0.75m"
+      },
+      {
+        "key": "MovementSpeedSlow",
+        "label": "Move Speed",
+        "value": "24%"
+      },
+      {
+        "key": "GroundDashReductionPercent",
+        "label": "Dash Distance",
+        "value": "-10%"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "2s"
+      }
+    ],
+    "icon": "spirit/mystic_slow_psd.png"
+  },
+  {
+    "id": "upgrade_magic_vulnerability",
+    "name": "Mystic Vulnerability",
+    "category": "spirit",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": false,
+    "description": "When an enemy takes Spirit Damage, they have their Spirit Resist reduced.",
+    "description_html": "When an enemy takes Spirit Damage, they have their Spirit Resist reduced.",
+    "stats": [
+      {
+        "key": "TechResist",
+        "label": "Spirit Resist",
+        "value": "+8%"
+      },
+      {
+        "key": "TechArmorDamageReduction",
+        "label": "Spirit Resist",
+        "value": "-8%"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "7s"
+      }
+    ],
+    "icon": "spirit/mystic_vulnerability_psd.png"
+  },
+  {
+    "id": "upgrade_quick_silver",
+    "name": "Quicksilver Reload",
+    "category": "spirit",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": false,
+    "description": "Your imbued ability charges up over time with Bonus Spirit Damage, Fire Rate, and reloads bullets on use.",
+    "description_html": "Your imbued ability charges up over time with Bonus Spirit Damage, Fire Rate, and <span class=\"highlight\">reloads bullets</span> on use.",
+    "stats": [
+      {
+        "key": "Damage",
+        "label": "Damage",
+        "value": "44"
+      },
+      {
+        "key": "BonusFireRate",
+        "label": "Fire Rate",
+        "value": "+10%"
+      },
+      {
+        "key": "AmmoReloadPercent",
+        "label": "Bullets Reloaded",
+        "value": "100%"
+      },
+      {
+        "key": "AbilityChargeUpTime",
+        "label": "Charge-Up Time",
+        "value": "18s"
+      }
+    ],
+    "icon": "spirit/quicksilver_reload_psd.png"
+  },
+  {
+    "id": "upgrade_containment",
+    "name": "Slowing Hex",
+    "category": "spirit",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": true,
+    "description": "Slows movement of enemy target. Also Silences their movement-based items and abilities.\nIncreases the target's gravity.\nDoes not affect target's stamina usage.",
+    "description_html": "<span class=\"highlight\">Slows movement</span> of enemy target. Also <span class=\"highlight\">Silences</span> their <span class=\"highlight\">movement-based items and abilities</span>.<br><span class=\"diminish\">Increases the target's gravity.<br>Does not affect target's stamina usage.</span>",
+    "stats": [
+      {
+        "key": "BonusSprintSpeed",
+        "label": "Sprint Speed",
+        "value": "+0.5m"
+      },
+      {
+        "key": "AbilityCastRange",
+        "label": "Cast Range",
+        "value": "25m"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "3.5s"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "29s"
+      },
+      {
+        "key": "SlowPercent",
+        "label": "Move Speed",
+        "value": "16%"
+      },
+      {
+        "key": "GroundDashReductionPercent",
+        "label": "Dash Distance",
+        "value": "-26%"
+      }
+    ],
+    "icon": "spirit/slowing_hex_psd.png"
+  },
+  {
+    "id": "upgrade_spirit_sap",
+    "name": "Spirit Sap",
+    "category": "spirit",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": true,
+    "description": "Target an enemy to reduce their Spirit Resist and Spirit Power.",
+    "description_html": "Target an enemy to <span class=\"highlight\">reduce their Spirit Resist</span> and <span class=\"highlight\">Spirit Power</span>.",
+    "stats": [
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+50"
+      },
+      {
+        "key": "MagicResistReduction",
+        "label": "Spirit Resist",
+        "value": "-9%"
+      },
+      {
+        "key": "TechPowerReduction",
+        "label": "Spirit Power",
+        "value": "-30"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "12s"
+      },
+      {
+        "key": "AbilityCastRange",
+        "label": "Cast Range",
+        "value": "40m"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "18s"
+      }
+    ],
+    "icon": "spirit/spirit_sap_psd.png"
+  },
+  {
+    "id": "upgrade_suppressor",
+    "name": "Suppressor",
+    "category": "spirit",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": false,
+    "description": "When you deal Spirit Damage to enemies, you also reduce their Fire Rate.",
+    "description_html": "When you deal Spirit Damage to enemies, you also reduce their <span class=\"highlight\">Fire Rate</span>.",
+    "stats": [
+      {
+        "key": "TechPower",
+        "label": "Spirit Power",
+        "value": "+6"
+      },
+      {
+        "key": "BulletResist",
+        "label": "Bullet Resist",
+        "value": "+8%"
+      },
+      {
+        "key": "FireRateSlow",
+        "label": "Fire Rate",
+        "value": "28%"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "4.5s"
+      }
+    ],
+    "icon": "spirit/suppressor_psd.png"
+  },
+  {
+    "id": "upgrade_rupture",
+    "name": "Decay",
+    "category": "spirit",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": true,
+    "description": "Inflict damage over time to a target, dealing damage based on their current health.\nDecay's damage is non-lethal and does not apply item procs.",
+    "description_html": "Inflict <span class=\"highlight\">damage over time</span> to a target, dealing damage based on their current health.<br>Decay's damage is non-lethal and does not apply item procs.",
+    "stats": [
+      {
+        "key": "TechPower",
+        "label": "Spirit Power",
+        "value": "+8"
+      },
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+65"
+      },
+      {
+        "key": "DotHealthPercent",
+        "label": "Bleed Damage",
+        "value": "1.95% DPS"
+      },
+      {
+        "key": "HealAmpReceivePenaltyPercent",
+        "label": "Incoming Healing",
+        "value": "-50%"
+      },
+      {
+        "key": "AbilityCastRange",
+        "label": "Cast Range",
+        "value": "20m"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "12s"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "30s"
+      }
+    ],
+    "icon": "spirit/decay_psd.png"
+  },
+  {
+    "id": "upgrade_greater_withering_whip",
+    "name": "Disarming Hex",
+    "category": "spirit",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": true,
+    "description": "Disarms enemy target and reduces their Bullet Resist.",
+    "description_html": "<span class=\"highlight\">Disarms</span> enemy target and reduces their <span class=\"highlight\">Bullet Resist</span>.",
+    "stats": [
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+75"
+      },
+      {
+        "key": "BonusSprintSpeed",
+        "label": "Sprint Speed",
+        "value": "+0.75m"
+      },
+      {
+        "key": "AbilityCastRange",
+        "label": "Cast Range",
+        "value": "32m"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "4.25s"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "16s"
+      },
+      {
+        "key": "BulletArmorReduction",
+        "label": "Bullet Resist",
+        "value": "-13%"
+      }
+    ],
+    "icon": "spirit/disarming_hex_psd.png"
+  },
+  {
+    "id": "upgrade_tech_range",
+    "name": "Greater Expansion",
+    "category": "spirit",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": false,
+    "description": "Increases the range and effect radius of your abilities and items.",
+    "description_html": "Increases the <span class=\"highlight\">range</span> and <span class=\"highlight\">effect radius</span> of your abilities and items.",
+    "stats": [
+      {
+        "key": "TechResist",
+        "label": "Spirit Resist",
+        "value": "+10%"
+      },
+      {
+        "key": "TechRangeMultiplier",
+        "label": "Ability Range",
+        "value": "+30%"
+      }
+    ],
+    "icon": "spirit/greater_expansion_psd.png"
+  },
+  {
+    "id": "upgrade_target_stun",
+    "name": "Knockdown",
+    "category": "spirit",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": true,
+    "description": "Apply a Stun after 2s. Stun duration is increased against airborne targets.\n\nIncreases the target's gravity for the duration of the stun.",
+    "description_html": "Apply a <span class=\"highlight\">Stun</span> after <span class=\"highlight\">2s</span>. Stun duration is increased against <span class=\"highlight\">airborne</span> targets.<br><br><span class=\"diminish\">Increases the target's gravity for the duration of the stun.</span>",
+    "stats": [
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+75"
+      },
+      {
+        "key": "TechRangeMultiplier",
+        "label": "Ability Range",
+        "value": "+5%"
+      },
+      {
+        "key": "AbilityCastRange",
+        "label": "Cast Range",
+        "value": "45m"
+      }
+    ],
+    "icon": "spirit/knockdown_psd.png"
+  },
+  {
+    "id": "upgrade_resonant_healing",
+    "name": "Radiant Regeneration",
+    "category": "spirit",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": false,
+    "description": "Dealing Spirit Damage to enemy Heroes grants you Bonus Regen. Stacks when dealing damage to different heroes.\n\nHeal and gain bonus Movement Speed for a short duration when you cast an ability.",
+    "description_html": "Dealing Spirit Damage to enemy Heroes grants you Bonus Regen. Stacks when dealing damage to different heroes.<br><br><span class=\"highlight\">Heal</span> and gain bonus <span class=\"highlight\">Movement Speed</span> for a short duration when you cast an ability.",
+    "stats": [
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+90"
+      },
+      {
+        "key": "Regeneration",
+        "label": "Regeneration",
+        "value": "4 HP/s"
+      },
+      {
+        "key": "RegenerationDuration",
+        "label": "Regeneration Duration",
+        "value": "7s"
+      },
+      {
+        "key": "HealingPerCast",
+        "label": "Healing on Ability Cast",
+        "value": "65"
+      },
+      {
+        "key": "BonusMoveSpeed",
+        "label": "Move Speed",
+        "value": "+1.75 m"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "6s"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "3s"
+      }
+    ],
+    "icon": "spirit/radiant_regeneration_psd.png"
+  },
+  {
+    "id": "upgrade_rapid_recharge",
+    "name": "Rapid Recharge",
+    "category": "spirit",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": false,
+    "description": "",
+    "description_html": "",
+    "stats": [
+      {
+        "key": "CooldownReductionOnChargedAbilities",
+        "label": "Cooldown Reduction For Charged Abilities",
+        "value": "14%"
+      },
+      {
+        "key": "BonusSpiritForChargedAbilities",
+        "label": "Bonus Spirit Power for Charged Abilities",
+        "value": "14"
+      },
+      {
+        "key": "BonusAbilityCharges",
+        "label": "Bonus Ability Charges",
+        "value": "+2"
+      },
+      {
+        "key": "CooldownBetweenChargeReduction",
+        "label": "Faster Time Between Charges",
+        "value": "+30%"
+      }
+    ],
+    "icon": "spirit/rapid_recharge_psd.png"
+  },
+  {
+    "id": "upgrade_targeted_silence",
+    "name": "Silence Wave",
+    "category": "spirit",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": true,
+    "description": "Launch an expanding projectile which Silences enemies for a short duration and deals impact damage. \n\nSilence does not interrupt channeling abilities.",
+    "description_html": "Launch an expanding projectile which <span class=\"highlight\">Silences</span> enemies for a short duration and deals impact damage. <br><br><span class=\"diminish\">Silence does not interrupt channeling abilities.</span>",
+    "stats": [
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+50"
+      },
+      {
+        "key": "Damage",
+        "label": "Damage",
+        "value": "75"
+      },
+      {
+        "key": "AbilityCastRange",
+        "label": "Cast Range",
+        "value": "40m"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "42s"
+      }
+    ],
+    "icon": "spirit/silence_glyph_psd.png"
+  },
+  {
+    "id": "upgrade_spirit_snatch",
+    "name": "Spirit Snatch",
+    "category": "spirit",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": false,
+    "description": "When you perform a Light or Heavy Melee attack against a hero, the attack deals extra Spirit Damage and steals Spirit Resist and Spirit Power.\n\nEffects are reduced by 30% for Light Melee hits.",
+    "description_html": "When you perform a <span class=\"highlight\">Light or Heavy Melee</span> attack against a hero, the attack deals extra Spirit Damage and steals <span class=\"highlight\">Spirit Resist</span> and <span class=\"highlight\">Spirit Power</span>.<span class=\"diminish\"><br><br>Effects are reduced by 30% for Light Melee hits.</span>",
+    "stats": [
+      {
+        "key": "BonusMeleeDamagePercent",
+        "label": "Melee Damage",
+        "value": "+7%"
+      },
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+75"
+      },
+      {
+        "key": "SpiritDamage",
+        "label": "Spirit Damage",
+        "value": "50"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "10s"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "6s"
+      }
+    ],
+    "icon": "spirit/spirit_snatch_psd.png"
+  },
+  {
+    "id": "upgrade_cooldown_reduction",
+    "name": "Superior Cooldown",
+    "category": "spirit",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": false,
+    "description": "Reduces the Cooldown of your abilities.",
+    "description_html": "Reduces the <span class=\"highlight\">Cooldown</span> of your abilities.",
+    "stats": [
+      {
+        "key": "OutOfCombatHealthRegen",
+        "label": "Out of Combat Regen",
+        "value": "+4"
+      },
+      {
+        "key": "CooldownReduction",
+        "label": "Ability Cooldown Reduction",
+        "value": "+20%"
+      }
+    ],
+    "icon": "spirit/superior_cooldown_psd.png"
+  },
+  {
+    "id": "upgrade_imbued_duration_extender",
+    "name": "Superior Duration",
+    "category": "spirit",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": false,
+    "description": "Increases the duration of your abilities and items.",
+    "description_html": "Increases the <span class=\"highlight\">duration</span> of your abilities and items.",
+    "stats": [
+      {
+        "key": "BulletResist",
+        "label": "Bullet Resist",
+        "value": "+8%"
+      },
+      {
+        "key": "BonusAbilityDurationPercent",
+        "label": "Ability Duration",
+        "value": "+28%"
+      }
+    ],
+    "icon": "spirit/superior_duration_psd.png"
+  },
+  {
+    "id": "upgrade_magic_storm",
+    "name": "Surge of Power",
+    "category": "spirit",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": false,
+    "description": "Imbue an ability with permanent Spirit Power. When that ability is used, gain bonus Move Speed and maintain full speed while attacking.",
+    "description_html": "Imbue an ability with <span class=\"highlight\">permanent Spirit Power</span>. When that ability is used, gain bonus <span class=\"highlight\">Move Speed</span> and maintain full speed while attacking.",
+    "stats": [
+      {
+        "key": "ImbuedTechPower",
+        "label": "Imbued Ability Spirit Power",
+        "value": "+28"
+      },
+      {
+        "key": "BonusMoveSpeed",
+        "label": "Move Speed",
+        "value": "+1.75 m"
+      },
+      {
+        "key": "MovementSpeedBonusDuration",
+        "label": "Move Speed Duration",
+        "value": "8s"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "14s"
+      }
+    ],
+    "icon": "spirit/surge_of_power_psd.png"
+  },
+  {
+    "id": "upgrade_magic_shock",
+    "name": "Tankbuster",
+    "category": "spirit",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": false,
+    "description": "Charges up over time with Bonus Spirit Damage, causing abilities dealing more than 165 damage to deal additional damage. Ignores Spirit Resistance.",
+    "description_html": "Charges up over time with Bonus Spirit Damage, causing abilities dealing more than <span class=\"highlight\">165</span> damage to deal additional damage. <span class=\"highlight\">Ignores Spirit Resistance.</span>",
+    "stats": [
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+50"
+      },
+      {
+        "key": "Damage",
+        "label": "Damage",
+        "value": "40"
+      },
+      {
+        "key": "CurrentHealthDamage",
+        "label": "Current Health Damage",
+        "value": "7.5%"
+      },
+      {
+        "key": "AbilityChargeUpTime",
+        "label": "Charge-Up Time",
+        "value": "14s"
+      }
+    ],
+    "icon": "spirit/tankbuster_psd.png"
+  },
+  {
+    "id": "upgrade_tech_damage_pulse",
+    "name": "Torment Pulse",
+    "category": "spirit",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": false,
+    "description": "Periodically deals Spirit Damage to the closest two enemies nearby.",
+    "description_html": "Periodically deals Spirit Damage to the closest two enemies nearby.",
+    "stats": [
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+100"
+      },
+      {
+        "key": "MeleeResistPercent",
+        "label": "Melee Resist",
+        "value": "+18%"
+      },
+      {
+        "key": "DamagePulseAmount",
+        "label": "Pulse Damage",
+        "value": "25"
+      },
+      {
+        "key": "DamagePulseRadius",
+        "label": "Pulse Radius",
+        "value": "9m"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "1.4s"
+      }
+    ],
+    "icon": "spirit/torment_pulse_psd.png"
+  },
+  {
+    "id": "upgrade_arctic_blast",
+    "name": "Arctic Blast",
+    "category": "spirit",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": true,
+    "description": "Release an expanding ice blast that deals Spirit Damage, Freezing and then Slowing targets it hits.\n\nSlowed targets have their stamina regen frozen",
+    "description_html": "Release an expanding ice blast that deals Spirit Damage, <span class=\"highlight\">Freezing</span> and then <span class=\"highlight\">Slowing</span> targets it hits.<br><br>Slowed targets have their <span class=\"highlight\">stamina regen frozen</span>",
+    "stats": [
+      {
+        "key": "TechResist",
+        "label": "Spirit Resist",
+        "value": "+10%"
+      },
+      {
+        "key": "Damage",
+        "label": "Damage",
+        "value": "175"
+      },
+      {
+        "key": "FreezeDuration",
+        "label": "Freeze Duration",
+        "value": "1s"
+      },
+      {
+        "key": "EndRadius",
+        "label": "End Radius",
+        "value": "16m"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "24s"
+      }
+    ],
+    "icon": "spirit/arctic_blast_psd.png"
+  },
+  {
+    "id": "upgrade_boundless_spirit",
+    "name": "Boundless Spirit",
+    "category": "spirit",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": false,
+    "description": "",
+    "description_html": "",
+    "stats": [
+      {
+        "key": "TechPowerPercent",
+        "label": "Spirit Power",
+        "value": "+15%"
+      },
+      {
+        "key": "TechPower",
+        "label": "Spirit Power",
+        "value": "+30"
+      },
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+75"
+      },
+      {
+        "key": "OutOfCombatHealthRegen",
+        "label": "Out of Combat Regen",
+        "value": "+4"
+      }
+    ],
+    "icon": "spirit/boundless_spirit_psd.png"
+  },
+  {
+    "id": "upgrade_glitch",
+    "name": "Cursed Relic",
+    "category": "spirit",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": true,
+    "description": "Curses an enemy - interrupting, Silencing, Disarming, and preventing item usage. Removes all non-ultimate buffs.\n\nYour own Damage Output is reduced for the duration.",
+    "description_html": "Curses an enemy - <span class=\"highlight\">interrupting, Silencing, Disarming</span>, and <span class=\"highlight\">preventing item usage</span>. <span class=\"highlight\">Removes all non-ultimate buffs</span>.<br><br>Your own <span class=\"highlight\">Damage Output</span> is reduced for the duration.",
+    "stats": [
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "55s"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "3.25s"
+      },
+      {
+        "key": "AbilityCastRange",
+        "label": "Cast Range",
+        "value": "20m"
+      },
+      {
+        "key": "OutgoingDamagePenaltyPercent",
+        "label": "Damage Penalty",
+        "value": "-25%"
+      }
+    ],
+    "icon": "spirit/curse_psd.png"
+  },
+  {
+    "id": "upgrade_ability_power_shard",
+    "name": "Echo Shard",
+    "category": "spirit",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": true,
+    "description": "Reset the cooldown of the imbued non-ultimate ability.\n\nThis item's cooldown is increased by the cooldown of the imbued ability.",
+    "description_html": "<span class=\"highlight\">Reset the cooldown</span> of the imbued non-ultimate ability.<br><br>This item's cooldown is increased by <span class=\"highlight\">the cooldown of the imbued ability</span>.",
+    "stats": [
+      {
+        "key": "TechResist",
+        "label": "Spirit Resist",
+        "value": "+5%"
+      },
+      {
+        "key": "BulletResist",
+        "label": "Bullet Resist",
+        "value": "+5%"
+      },
+      {
+        "key": "ImbuedCooldownMultiplier",
+        "label": "Imbued Ability Cooldown",
+        "value": "100%"
+      }
+    ],
+    "icon": "spirit/echo_shard_psd.png"
+  },
+  {
+    "id": "upgrade_escalating_exposure",
+    "name": "Escalating Exposure",
+    "category": "spirit",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": false,
+    "description": "Dealing Spirit Damage applies a stacking Spirit Amp that increases your Spirit Damage to the target.",
+    "description_html": "Dealing Spirit Damage applies a stacking <span class=\"highlight\">Spirit Amp</span> that increases your Spirit Damage to the target.",
+    "stats": [
+      {
+        "key": "TechArmorDamageReduction",
+        "label": "Spirit Resist",
+        "value": "-8%"
+      },
+      {
+        "key": "TechResist",
+        "label": "Spirit Resist",
+        "value": "+17%"
+      },
+      {
+        "key": "MagicIncreasePerStack",
+        "label": "Spirit Amp per Stack",
+        "value": "+4.5%"
+      },
+      {
+        "key": "MaxStacks",
+        "label": "Max Stacks",
+        "value": "12"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "12s"
+      },
+      {
+        "key": "ProcCooldown",
+        "label": "Max Frequency",
+        "value": "0.7s"
+      }
+    ],
+    "icon": "spirit/escalating_exposure_psd.png"
+  },
+  {
+    "id": "upgrade_self_bubble",
+    "name": "Ethereal Shift",
+    "category": "spirit",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": true,
+    "description": "Instantly enter a void state and become Invulnerable for a short duration.\n\nAfterwards, gain a variety of temporary buffs:",
+    "description_html": "Instantly enter a void state and become Invulnerable for a short duration.<br><br>Afterwards, gain a variety of temporary buffs:",
+    "stats": [
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "4s"
+      },
+      {
+        "key": "BonusSpirit",
+        "label": "Spirit Power",
+        "value": "+20"
+      },
+      {
+        "key": "TechResist",
+        "label": "Spirit Resist",
+        "value": "+30%"
+      },
+      {
+        "key": "BonusMoveSpeed",
+        "label": "Move Speed",
+        "value": "+3 m"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "37s"
+      },
+      {
+        "key": "BuffDuration",
+        "label": "Buff Duration",
+        "value": "5s"
+      }
+    ],
+    "icon": "spirit/ethereal_shift_psd.png"
+  },
+  {
+    "id": "upgrade_focus_lens",
+    "name": "Focus Lens",
+    "category": "spirit",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": true,
+    "description": "Target an enemy to Silence them. A portion of all damage dealt during the silence gets applied to the target when the silence wears off.",
+    "description_html": "Target an enemy to <span class=\"highlight\">Silence</span> them. A portion of <span class=\"highlight\">all damage dealt</span> during the silence gets applied to the target when the silence wears off.",
+    "stats": [
+      {
+        "key": "BonusFireRate",
+        "label": "Fire Rate",
+        "value": "+10%"
+      },
+      {
+        "key": "PercentDamage",
+        "label": "Damage On Expire",
+        "value": "35%"
+      },
+      {
+        "key": "MagicResistReduction",
+        "label": "Spirit Resist",
+        "value": "-9%"
+      },
+      {
+        "key": "ResistReductionDuration",
+        "label": "Resist Reduction Duration",
+        "value": "12s"
+      },
+      {
+        "key": "AbilityCastRange",
+        "label": "Cast Range",
+        "value": "25m"
+      },
+      {
+        "key": "TechPowerReduction",
+        "label": "Spirit Power",
+        "value": "-30"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "45s"
+      }
+    ],
+    "icon": "spirit/focus_lens_psd.png"
+  },
+  {
+    "id": "upgrade_ultimate_burst",
+    "name": "Lightning Scroll",
+    "category": "spirit",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": false,
+    "description": "Damage from your ultimate applies a Stun and deals Bonus Spirit Damage after a short delay.\n\nThis effect can only trigger once per target per ultimate.\n\nMystic Slow effects",
+    "description_html": "Damage from your ultimate applies a Stun and deals Bonus Spirit Damage after a short delay.</span><br><br><span class=\"diminish\">This effect can only trigger once per target per ultimate.</span><br><br><span class=\"highlight\">Mystic Slow effects</span>",
+    "stats": [
+      {
+        "key": "MovementSpeedSlow",
+        "label": "Move Speed",
+        "value": "24%"
+      },
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+50"
+      },
+      {
+        "key": "BonusSprintSpeed",
+        "label": "Sprint Speed",
+        "value": "+0.75m"
+      },
+      {
+        "key": "Damage",
+        "label": "Damage",
+        "value": "150"
+      },
+      {
+        "key": "DelayBeforeStun",
+        "label": "Delay Before Effect",
+        "value": "3s"
+      }
+    ],
+    "icon": "spirit/lightning_scroll_psd.png"
+  },
+  {
+    "id": "upgrade_magic_carpet",
+    "name": "Magic Carpet",
+    "category": "spirit",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": true,
+    "description": "Summon a Magic Carpet that will fly you away. While flying you are immune to slows and doing any action will dismiss the carpet. \nCannot use abilities while the carpet is being summoned.",
+    "description_html": "Summon a Magic Carpet that will <span class=\"highlight\">fly</span> you away. While flying you are immune to slows and doing any action will dismiss the carpet. <span class=\"diminish\"><br>Cannot use abilities while the carpet is being summoned.</span>",
+    "stats": [
+      {
+        "key": "BonusAbilityDurationPercent",
+        "label": "Ability Duration",
+        "value": "+15%"
+      },
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+125"
+      },
+      {
+        "key": "TechPower",
+        "label": "Spirit Power",
+        "value": "+14"
+      },
+      {
+        "key": "GravityScale",
+        "label": "Gravity Scale",
+        "value": "-15%"
+      },
+      {
+        "key": "AirControlPercent",
+        "label": "Air Control",
+        "value": "+25%"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "12s"
+      },
+      {
+        "key": "SummonDuration",
+        "label": "Summon Duration",
+        "value": "1.3s"
+      }
+    ],
+    "icon": "spirit/magic_carpet_psd.png"
+  },
+  {
+    "id": "upgrade_ethereal_bullets",
+    "name": "Mercurial Magnum",
+    "category": "spirit",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": false,
+    "description": "Your imbued ability charges up over time with Bonus Spirit Damage, Fire Rate, and reloads bullets on use. Until your next reload, your bullets deal Bonus Spirit Damage based on your Spirit Power.",
+    "description_html": "Your imbued ability charges up over time with Bonus Spirit Damage, Fire Rate, and <span class=\"highlight\">reloads bullets</span> on use. Until your next reload, your <span class=\"highlight\">bullets deal Bonus Spirit Damage</span> based on your Spirit Power.",
+    "stats": [
+      {
+        "key": "BonusClipSizePercent",
+        "label": "Max Ammo",
+        "value": "+20%"
+      },
+      {
+        "key": "TechPower",
+        "label": "Spirit Power",
+        "value": "+7"
+      },
+      {
+        "key": "BulletsBonusMagicDamage",
+        "label": "Base Bullet Damage",
+        "value": "20%"
+      },
+      {
+        "key": "Damage",
+        "label": "Damage",
+        "value": "60"
+      },
+      {
+        "key": "BonusFireRate",
+        "label": "Fire Rate",
+        "value": "+22%"
+      },
+      {
+        "key": "AmmoReloadPercent",
+        "label": "Bullets Reloaded",
+        "value": "100%"
+      },
+      {
+        "key": "AbilityChargeUpTime",
+        "label": "Charge-Up Time",
+        "value": "14s"
+      }
+    ],
+    "icon": "spirit/mercurial_magnum_psd.png"
+  },
+  {
+    "id": "upgrade_mystic_reverb",
+    "name": "Mystic Reverb",
+    "category": "spirit",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": false,
+    "description": "Imbue an ability with Lifesteal and to apply slow on a hit target and deal an additional percentage of the damage dealt to enemies around the target after a short delay.",
+    "description_html": "Imbue an ability with <span class=\"highlight\">Lifesteal</span> and to apply <span class=\"highlight\">slow</span> on a hit target and deal an <span class=\"highlight\">additional percentage of the damage dealt</span> to enemies around the target after a short delay.",
+    "stats": [
+      {
+        "key": "AbilityLifestealPercentHero",
+        "label": "Spirit Lifesteal",
+        "value": "+8%"
+      },
+      {
+        "key": "TechDamagePercent",
+        "label": "Damage",
+        "value": "50"
+      },
+      {
+        "key": "ImbueAbilityLifesteal",
+        "label": "Imbued Lifesteal",
+        "value": "+22%"
+      },
+      {
+        "key": "MovementSpeedSlow",
+        "label": "Move Speed",
+        "value": "32%"
+      },
+      {
+        "key": "Radius",
+        "label": "Radius",
+        "value": "16m"
+      },
+      {
+        "key": "DelayDuration",
+        "label": "Delay Duration",
+        "value": "3"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "6.25s"
+      }
+    ],
+    "icon": "spirit/mystic_reverb_psd.png"
+  },
+  {
+    "id": "upgrade_ability_refresher",
+    "name": "Refresher",
+    "category": "spirit",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": true,
+    "description": "Reset the cooldown of all your abilities and restore all your charges.",
+    "description_html": "<span class=\"highlight\">Reset the cooldown</span> of all your abilities and <span class=\"highlight\">restore all your charges</span>.",
+    "stats": [
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "300s"
+      }
+    ],
+    "icon": "spirit/refresher_psd.png"
+  },
+  {
+    "id": "upgrade_discord",
+    "name": "Scourge",
+    "category": "spirit",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": true,
+    "description": "Apply Spirit Resist, Debuff Resist and an aura on a friendly target that deals Spirit Icondamage to enemies proportional to their max health. Existing debuffs on the target are reduced.\nCan be self cast.",
+    "description_html": "Apply <span class=\"highlight\">Spirit Resist</span>, <span class=\"highlight\">Debuff Resist</span> and an aura on a friendly target that deals <span class=\"highlight\">Spirit Icondamage</span> to enemies proportional to their max health. Existing debuffs on the target are reduced.<br>Can be self cast.",
+    "stats": [
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+100"
+      },
+      {
+        "key": "MaxHealthPercentAsDPS",
+        "label": "Max Health per second",
+        "value": "2.3%"
+      },
+      {
+        "key": "TechResist",
+        "label": "Spirit Resist",
+        "value": "+40%"
+      },
+      {
+        "key": "StatusResistancePercent",
+        "label": "Debuff Resist",
+        "value": "+20%"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "10s"
+      },
+      {
+        "key": "AbilityCastRange",
+        "label": "Cast Range",
+        "value": "35m"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "35s"
+      }
+    ],
+    "icon": "spirit/scourge_psd.png"
+  },
+  {
+    "id": "upgrade_spirit_burn",
+    "name": "Spirit Burn",
+    "category": "spirit",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": false,
+    "description": "Dealing significant Spirit Damage to an enemy within 5s causes an explosion dealing damage and a burn to that enemy. While burning, enemies take damage over time and receive reduced healing.\nThe cooldown is per enemy, so each target can only be burned once per cooldown. Deals half-damage on non-heroes.",
+    "description_html": "Dealing significant Spirit Damage to an enemy within 5s causes an explosion dealing damage and a burn to that enemy. While burning, enemies take damage over time and receive reduced healing.<br><span class=\"diminish\">The cooldown is per enemy, so each target can only be burned once per cooldown. Deals half-damage on non-heroes.</span>",
+    "stats": [
+      {
+        "key": "TechRangeMultiplier",
+        "label": "Ability Range",
+        "value": "+6%"
+      },
+      {
+        "key": "DamageThreshold",
+        "label": "Damage Threshold",
+        "value": "500"
+      },
+      {
+        "key": "ExplosionDamage",
+        "label": "Explosion Damage",
+        "value": "50"
+      },
+      {
+        "key": "DPS",
+        "label": "Damage Per Second",
+        "value": "24"
+      },
+      {
+        "key": "ImmunityDuration",
+        "label": "Immunity Duration",
+        "value": "20s"
+      },
+      {
+        "key": "DebuffDuration",
+        "label": "Debuff Duration",
+        "value": "8s"
+      },
+      {
+        "key": "HealAmpReceivePenaltyPercent",
+        "label": "Incoming Healing",
+        "value": "-70%"
+      }
+    ],
+    "icon": "spirit/spirit_burn_psd.png"
+  },
+  {
+    "id": "upgrade_transcendent_cooldown",
+    "name": "Transcendent Cooldown",
+    "category": "spirit",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": false,
+    "description": "Reduces the Cooldown of your abilities and items.",
+    "description_html": "Reduces the <span class=\"highlight\">Cooldown</span> of your abilities and items.",
+    "stats": [
+      {
+        "key": "OutOfCombatHealthRegen",
+        "label": "Out of Combat Regen",
+        "value": "+4"
+      },
+      {
+        "key": "CooldownReduction",
+        "label": "Ability Cooldown Reduction",
+        "value": "+25%"
+      },
+      {
+        "key": "ItemCooldownReduction",
+        "label": "Item Cooldown Reduction",
+        "value": "+25%"
+      }
+    ],
+    "icon": "spirit/transcendent_cooldown_psd.png"
+  },
+  {
+    "id": "upgrade_aoe_root",
+    "name": "Vortex Web",
+    "category": "spirit",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": true,
+    "description": "Throw a vacuum grenade, pulling all enemies into a small area and applying Slowing Hex.  \n\nAlt Cast to Target Unit Directly.",
+    "description_html": "Throw a <span class=\"highlight\">vacuum</span> grenade, pulling all enemies into a small area and applying <span class=\"highlight\">Slowing Hex</span>.  <span class=\"diminish\"><br><br>Alt Cast to Target Unit Directly.</span>",
+    "stats": [
+      {
+        "key": "TechRangeMultiplier",
+        "label": "Ability Range",
+        "value": "+8%"
+      },
+      {
+        "key": "BonusSprintSpeed",
+        "label": "Sprint Speed",
+        "value": "+0.75m"
+      },
+      {
+        "key": "SlowPercent",
+        "label": "Move Speed",
+        "value": "28%"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "4s"
+      },
+      {
+        "key": "TetherDuration",
+        "label": "Tether Duration",
+        "value": "0.5s"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "42s"
+      },
+      {
+        "key": "GroundDashReductionPercent",
+        "label": "Dash Distance",
+        "value": "-36%"
+      }
+    ],
+    "icon": "spirit/vortex_web_psd.png"
+  },
+  {
+    "id": "upgrade_health",
+    "name": "Extra Health",
+    "category": "vitality",
+    "tier": 1,
+    "cost": 800,
+    "mode": "standard",
+    "active": false,
+    "description": "",
+    "description_html": "",
+    "stats": [
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+210"
+      }
+    ],
+    "icon": "vitality/extra_health_psd.png"
+  },
+  {
+    "id": "upgrade_endurance",
+    "name": "Extra Regen",
+    "category": "vitality",
+    "tier": 1,
+    "cost": 800,
+    "mode": "standard",
+    "active": false,
+    "description": "",
+    "description_html": "",
+    "stats": [
+      {
+        "key": "BonusHealthRegen",
+        "label": "Health Regen",
+        "value": "+2.5"
+      },
+      {
+        "key": "OutOfCombatHealthRegen",
+        "label": "Out of Combat Regen",
+        "value": "+1.5"
+      }
+    ],
+    "icon": "vitality/extra_regen_psd.png"
+  },
+  {
+    "id": "upgrade_improved_stamina",
+    "name": "Extra Stamina",
+    "category": "vitality",
+    "tier": 1,
+    "cost": 800,
+    "mode": "standard",
+    "active": false,
+    "description": "",
+    "description_html": "",
+    "stats": [
+      {
+        "key": "Stamina",
+        "label": "Stamina",
+        "value": "+1"
+      },
+      {
+        "key": "StaminaCooldownReduction",
+        "label": "Stamina Recovery",
+        "value": "+12%"
+      }
+    ],
+    "icon": "vitality/extra_stamina_psd.png"
+  },
+  {
+    "id": "upgrade_grit",
+    "name": "Grit",
+    "category": "vitality",
+    "tier": 1,
+    "cost": 800,
+    "mode": "standard",
+    "active": true,
+    "description": "Gain a Barrier for a short duration.",
+    "description_html": "Gain a <span class=\"highlight\">Barrier</span> for a short duration.",
+    "stats": [
+      {
+        "key": "OutOfCombatHealthRegen",
+        "label": "Out of Combat Regen",
+        "value": "+1"
+      },
+      {
+        "key": "CombatBarrier",
+        "label": "Barrier",
+        "value": "200"
+      },
+      {
+        "key": "BarrierDuration",
+        "label": "Barrier Duration",
+        "value": "4s"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "60s"
+      }
+    ],
+    "icon": "vitality/grit_psd.png"
+  },
+  {
+    "id": "upgrade_health_stimpak",
+    "name": "Healing Rite",
+    "category": "vitality",
+    "tier": 1,
+    "cost": 800,
+    "mode": "standard",
+    "active": true,
+    "description": "Grant Regen and Sprint Speed to the target. Gets dispelled if you take damage from enemy players or objectives. Can be self-cast.",
+    "description_html": "Grant <span class=\"highlight\">Regen</span> and <span class=\"highlight\">Sprint Speed</span> to the target. Gets dispelled if you take damage from enemy players or objectives. Can be self-cast.",
+    "stats": [
+      {
+        "key": "TotalHealthRegen",
+        "label": "Total HP Regen",
+        "value": "300"
+      },
+      {
+        "key": "BonusSprintSpeed",
+        "label": "Sprint Speed",
+        "value": "+2m"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "70s"
+      },
+      {
+        "key": "RegenDuration",
+        "label": "Regen Duration",
+        "value": "20s"
+      },
+      {
+        "key": "AbilityCastRange",
+        "label": "Cast Range",
+        "value": "30m"
+      }
+    ],
+    "icon": "vitality/healing_rite_psd.png"
+  },
+  {
+    "id": "upgrade_lifestrike_gauntlets",
+    "name": "Melee Lifesteal",
+    "category": "vitality",
+    "tier": 1,
+    "cost": 800,
+    "mode": "standard",
+    "active": false,
+    "description": "Your next Melee attack heals you. \n\nThis heal is 30% effective vs non-heroes. \nCooldown is 1.5x as long for Light Melee hits.",
+    "description_html": "Your next <span class=\"highlight\">Melee</span> attack <span class=\"highlight\">heals you</span>. <span class=\"diminish\"><br><br>This heal is 30% effective vs non-heroes. <br>Cooldown is 1.5x as long for Light Melee hits.</span>",
+    "stats": [
+      {
+        "key": "BonusMeleeDamagePercent",
+        "label": "Melee Damage",
+        "value": "+12%"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "8s"
+      },
+      {
+        "key": "LifestrikeHeal",
+        "label": "Heal on Melee Hit",
+        "value": "100"
+      }
+    ],
+    "icon": "vitality/melee_lifesteal_psd.png"
+  },
+  {
+    "id": "upgrade_melee_rebuttal",
+    "name": "Rebuttal",
+    "category": "vitality",
+    "tier": 1,
+    "cost": 800,
+    "mode": "standard",
+    "active": false,
+    "description": "On a successful Parry against an enemy Hero, Heal yourself for the damage parried and returns that damage to the target, and temporarily gain increased damage.",
+    "description_html": "On a successful <span class=\"highlight\">Parry</span> against an enemy Hero, <span class=\"highlight\">Heal</span> yourself for the damage parried and returns that damage to the target, and temporarily gain increased <span class=\"highlight\">damage.</span>",
+    "stats": [
+      {
+        "key": "ParryCooldownReduction",
+        "label": "Parry Cooldown",
+        "value": "1.75s"
+      },
+      {
+        "key": "MeleeResistPercent",
+        "label": "Melee Resist",
+        "value": "+18%"
+      },
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+75"
+      },
+      {
+        "key": "BonusDamagePercent",
+        "label": "Bonus Damage",
+        "value": "+30%"
+      },
+      {
+        "key": "ParrySuccessHealPercentage",
+        "label": "Damage Parried as Heal",
+        "value": "100%"
+      },
+      {
+        "key": "BuffDuration",
+        "label": "Buff Duration",
+        "value": "6s"
+      }
+    ],
+    "icon": "vitality/rebuttal_psd.png"
+  },
+  {
+    "id": "upgrade_sprint_booster",
+    "name": "Sprint Boots",
+    "category": "vitality",
+    "tier": 1,
+    "cost": 800,
+    "mode": "standard",
+    "active": false,
+    "description": "",
+    "description_html": "",
+    "stats": [
+      {
+        "key": "OutOfCombatHealthRegen",
+        "label": "Out of Combat Regen",
+        "value": "+2"
+      },
+      {
+        "key": "BonusSprintSpeed",
+        "label": "Sprint Speed",
+        "value": "+2m"
+      }
+    ],
+    "icon": "vitality/sprint_boots_psd.png"
+  },
+  {
+    "id": "upgrade_regenerating_bullet_shield",
+    "name": "Battle Vest",
+    "category": "vitality",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": false,
+    "description": "While you are above 65% health, gain Weapon Damage and Fire Rate.",
+    "description_html": "While you are <span class=\"highlight\">above 65% health</span>, gain <span class=\"highlight\">Weapon Damage</span> and <span class=\"highlight\">Fire Rate</span>.",
+    "stats": [
+      {
+        "key": "BulletResist",
+        "label": "Bullet Resist",
+        "value": "+18%"
+      },
+      {
+        "key": "OutOfCombatHealthRegen",
+        "label": "Out of Combat Regen",
+        "value": "+3"
+      },
+      {
+        "key": "BaseAttackDamagePercent",
+        "label": "Weapon Damage",
+        "value": "+18%"
+      },
+      {
+        "key": "BonusFireRate",
+        "label": "Fire Rate",
+        "value": "+7%"
+      }
+    ],
+    "icon": "vitality/battle_vest_psd.png"
+  },
+  {
+    "id": "upgrade_vampire",
+    "name": "Bullet Lifesteal",
+    "category": "vitality",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": false,
+    "description": "",
+    "description_html": "",
+    "stats": [
+      {
+        "key": "BulletLifestealPercent",
+        "label": "Bullet Lifesteal",
+        "value": "+13%"
+      },
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+90"
+      },
+      {
+        "key": "BaseAttackDamagePercent",
+        "label": "Weapon Damage",
+        "value": "+6%"
+      }
+    ],
+    "icon": "vitality/bullet_lifesteal_psd.png"
+  },
+  {
+    "id": "upgrade_debuff_reducer",
+    "name": "Debuff Reducer",
+    "category": "vitality",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": false,
+    "description": "Reduces the duration of all negative effects applied to you.",
+    "description_html": "Reduces the <span class=\"highlight\">duration</span> of all negative effects applied to you.",
+    "stats": [
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+90"
+      },
+      {
+        "key": "StatusResistancePercent",
+        "label": "Debuff Resist",
+        "value": "+25%"
+      }
+    ],
+    "icon": "vitality/debuff_reducer_psd.png"
+  },
+  {
+    "id": "upgrade_magic_shield",
+    "name": "Enchanter's Emblem",
+    "category": "vitality",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": false,
+    "description": "While you are above 65% health, gain bonus Spirit and Cooldown Reduction.",
+    "description_html": "While you are <span class=\"highlight\">above 65% health</span>, gain bonus <span class=\"highlight\">Spirit</span> and <span class=\"highlight\">Cooldown Reduction</span>.",
+    "stats": [
+      {
+        "key": "TechResist",
+        "label": "Spirit Resist",
+        "value": "+18%"
+      },
+      {
+        "key": "OutOfCombatHealthRegen",
+        "label": "Out of Combat Regen",
+        "value": "+2"
+      },
+      {
+        "key": "TechPower",
+        "label": "Spirit Power",
+        "value": "+15"
+      },
+      {
+        "key": "CooldownReduction",
+        "label": "Ability Cooldown Reduction",
+        "value": "+5%"
+      }
+    ],
+    "icon": "vitality/enchanters_emblem_psd.png"
+  },
+  {
+    "id": "upgrade_cardio_calibrator",
+    "name": "Enduring Speed",
+    "category": "vitality",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": false,
+    "description": "Reduces the effect of enemy Move Speed penalties.",
+    "description_html": "Reduces the effect of enemy <span class=\"highlight\">Move Speed</span> penalties.",
+    "stats": [
+      {
+        "key": "BonusMoveSpeed",
+        "label": "Move Speed",
+        "value": "+2 m"
+      },
+      {
+        "key": "OutOfCombatHealthRegen",
+        "label": "Out of Combat Regen",
+        "value": "+2"
+      },
+      {
+        "key": "SlowResistancePercent",
+        "label": "Slow Resist",
+        "value": "+25%"
+      }
+    ],
+    "icon": "vitality/enduring_speed_psd.png"
+  },
+  {
+    "id": "upgrade_guardian_ward",
+    "name": "Guardian Ward",
+    "category": "vitality",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": true,
+    "description": "Provide the target with a Barrier and temporary Move Speed. \nCan be self-cast.\nCooldown is reduced by half when cast on someone else.",
+    "description_html": "Provide the target with a <span class=\"highlight\">Barrier</span> and temporary <span class=\"highlight\">Move Speed</span>. <span class=\"diminish\"><br>Can be self-cast.<br>Cooldown is reduced by half when cast on someone else.</span>",
+    "stats": [
+      {
+        "key": "OutOfCombatHealthRegen",
+        "label": "Out of Combat Regen",
+        "value": "+1.5"
+      },
+      {
+        "key": "TechRangeMultiplier",
+        "label": "Ability Range",
+        "value": "+8%"
+      },
+      {
+        "key": "BonusMoveSpeed",
+        "label": "Move Speed",
+        "value": "+2.75 m"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "60s"
+      },
+      {
+        "key": "BuffDuration",
+        "label": "Buff Duration",
+        "value": "6s"
+      },
+      {
+        "key": "AbilityCastRange",
+        "label": "Cast Range",
+        "value": "40m"
+      }
+    ],
+    "icon": "vitality/guardian_ward_psd.png"
+  },
+  {
+    "id": "upgrade_healbane",
+    "name": "Healbane",
+    "category": "vitality",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": false,
+    "description": "Your Spirit Damage reduces the enemy's Incoming Healing. If an enemy hero dies under this effect, you receive a large heal.",
+    "description_html": "Your Spirit Damage reduces the enemy's <span class=\"highlight\">Incoming Healing</span>. If an enemy hero dies under this effect, you receive a large heal.",
+    "stats": [
+      {
+        "key": "TechPower",
+        "label": "Spirit Power",
+        "value": "+7"
+      },
+      {
+        "key": "HealAmpReceivePenaltyPercent",
+        "label": "Incoming Healing",
+        "value": "-35%"
+      },
+      {
+        "key": "HealOnKill",
+        "label": "Heal On Hero Kill",
+        "value": "275"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "8s"
+      }
+    ],
+    "icon": "vitality/healbane_psd.png"
+  },
+  {
+    "id": "upgrade_healing_booster",
+    "name": "Healing Booster",
+    "category": "vitality",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": false,
+    "description": "Increases the effectiveness of your healing.",
+    "description_html": "Increases the effectiveness of your <span class=\"highlight\">healing</span>.",
+    "stats": [
+      {
+        "key": "BonusHealthRegen",
+        "label": "Health Regen",
+        "value": "+3"
+      },
+      {
+        "key": "OutOfCombatHealthRegen",
+        "label": "Out of Combat Regen",
+        "value": "+1"
+      },
+      {
+        "key": "HealAmpCastPercent",
+        "label": "Outgoing Healing",
+        "value": "+20%"
+      }
+    ],
+    "icon": "vitality/healing_booster_psd.png"
+  },
+  {
+    "id": "upgrade_vex_barrier",
+    "name": "Reactive Barrier",
+    "category": "vitality",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": false,
+    "description": "Gain a Barrier when you are Stunned, Chained, Immobilized, Slept or Silenced.",
+    "description_html": "Gain a <span class=\"highlight\">Barrier</span> when you are <span class=\"highlight\">Stunned, Chained, Immobilized, Slept or Silenced</span>.",
+    "stats": [
+      {
+        "key": "OutOfCombatHealthRegen",
+        "label": "Out of Combat Regen",
+        "value": "+1"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "55s"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "10s"
+      }
+    ],
+    "icon": "vitality/reactive_barrier_psd.png"
+  },
+  {
+    "id": "upgrade_restorative_locket",
+    "name": "Restorative Locket",
+    "category": "vitality",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": true,
+    "description": "When an enemy uses an ability within 32m range from you, store one Restoration Stack. \n\nConsume all stacks to heal yourself and replenish up to 3 stamina based on how many stacks you have.",
+    "description_html": "When an enemy uses an ability within 32m range from you, store one <span class=\"highlight\">Restoration Stack</span>. <br><br>Consume all stacks to <span class=\"highlight\">heal yourself</span> and replenish <span class=\"highlight\">up to 3 stamina</span> based on how many stacks you have.",
+    "stats": [
+      {
+        "key": "TechResist",
+        "label": "Spirit Resist",
+        "value": "+8%"
+      },
+      {
+        "key": "HealPerStack",
+        "label": "Heal Per Stack",
+        "value": "16"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "20s"
+      },
+      {
+        "key": "MaxStacks",
+        "label": "Max Stacks",
+        "value": "25"
+      },
+      {
+        "key": "MaxStaminaRestore",
+        "label": "Max Stamina Restore",
+        "value": "3"
+      }
+    ],
+    "icon": "vitality/restorative_locket_psd.png"
+  },
+  {
+    "id": "upgrade_return_fire",
+    "name": "Return Fire",
+    "category": "vitality",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": true,
+    "description": "Automatically fire a bullet towards any attacker who damages you with their abilities or weapon.",
+    "description_html": "Automatically <span class=\"highlight\">fire a bullet</span> towards any attacker who damages you with their abilities or weapon.",
+    "stats": [
+      {
+        "key": "BulletDamageReflectedPct",
+        "label": "Bullet Damage Returned",
+        "value": "65%"
+      },
+      {
+        "key": "SpiritDamageReflectedPct",
+        "label": "Spirit Damage Returned",
+        "value": "25%"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "6.5s"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "23s"
+      }
+    ],
+    "icon": "vitality/return_fire_psd.png"
+  },
+  {
+    "id": "upgrade_health_stealing_magic",
+    "name": "Spirit Lifesteal",
+    "category": "vitality",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": false,
+    "description": "",
+    "description_html": "",
+    "stats": [
+      {
+        "key": "AbilityLifestealPercentHero",
+        "label": "Spirit Lifesteal",
+        "value": "+13%"
+      },
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+90"
+      },
+      {
+        "key": "TechPower",
+        "label": "Spirit Power",
+        "value": "+6"
+      }
+    ],
+    "icon": "vitality/spirit_lifesteal_psd.png"
+  },
+  {
+    "id": "upgrade_spirit_bubble",
+    "name": "Spirit Shielding",
+    "category": "vitality",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": false,
+    "description": "Gain a Barrier whenever you take significant Spirit Damage from enemy Heroes in a small time frame.",
+    "description_html": "Gain a <span class=\"highlight\">Barrier</span> whenever you take significant Spirit Damage from enemy Heroes in a small time frame.",
+    "stats": [
+      {
+        "key": "OutOfCombatHealthRegen",
+        "label": "Out of Combat Regen",
+        "value": "+2.5"
+      },
+      {
+        "key": "CombatBarrier",
+        "label": "Barrier",
+        "value": "300"
+      },
+      {
+        "key": "TechResist",
+        "label": "Spirit Resist",
+        "value": "+18%"
+      },
+      {
+        "key": "DamageThreshold",
+        "label": "Damage Threshold",
+        "value": "225"
+      },
+      {
+        "key": "DamageWindow",
+        "label": "Time Frame",
+        "value": "3.5s"
+      },
+      {
+        "key": "BarrierDuration",
+        "label": "Barrier Duration",
+        "value": "8s"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "45s"
+      }
+    ],
+    "icon": "vitality/spirit_shielding_psd.png"
+  },
+  {
+    "id": "upgrade_trophy_collector",
+    "name": "Trophy Collector",
+    "category": "vitality",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": false,
+    "description": "Whenever you score an assist or kill, gain extra sprint, ability range and passive soul generation. This effect stacks and persists through death.",
+    "description_html": "Whenever you score an <span class=\"highlight\">assist or kill</span>, gain extra <span class=\"highlight\">sprint</span>, <span class=\"highlight\">ability range</span> and <span class=\"highlight\">passive soul generation</span>. This effect stacks and persists through death.",
+    "stats": [
+      {
+        "key": "NonPlayerBonusWeaponPower",
+        "label": "Weapon Damage vs. NPCs",
+        "value": "-15%"
+      },
+      {
+        "key": "BonusSprintSpeed",
+        "label": "Sprint Speed",
+        "value": "+2m"
+      },
+      {
+        "key": "OutOfCombatHealthRegen",
+        "label": "Out of Combat Regen",
+        "value": "+2"
+      },
+      {
+        "key": "MaxStacks",
+        "label": "Max Stacks",
+        "value": "16"
+      },
+      {
+        "key": "StackingGoldPerMinute",
+        "label": "Souls per Minute",
+        "value": "16"
+      }
+    ],
+    "icon": "vitality/trophy_collector_psd.png"
+  },
+  {
+    "id": "upgrade_weapon_shielding",
+    "name": "Weapon Shielding",
+    "category": "vitality",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": false,
+    "description": "Gain a Barrier whenever you take significant Weapon Damage from enemy Heroes in a small time frame.",
+    "description_html": "Gain a <span class=\"highlight\">Barrier</span> whenever you take significant Weapon Damage from enemy Heroes in a small time frame.",
+    "stats": [
+      {
+        "key": "OutOfCombatHealthRegen",
+        "label": "Out of Combat Regen",
+        "value": "+2.5"
+      },
+      {
+        "key": "CombatBarrier",
+        "label": "Barrier",
+        "value": "300"
+      },
+      {
+        "key": "BulletResist",
+        "label": "Bullet Resist",
+        "value": "+18%"
+      },
+      {
+        "key": "DamageThreshold",
+        "label": "Damage Threshold",
+        "value": "250"
+      },
+      {
+        "key": "DamageWindow",
+        "label": "Time Frame",
+        "value": "4s"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "35s"
+      },
+      {
+        "key": "BarrierDuration",
+        "label": "Barrier Duration",
+        "value": "8s"
+      }
+    ],
+    "icon": "vitality/weapon_shielding_psd.png"
+  },
+  {
+    "id": "upgrade_improved_bullet_armor",
+    "name": "Bullet Resilience",
+    "category": "vitality",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": false,
+    "description": "When below 50% health, gain additional Bullet Resist.",
+    "description_html": "When below <span class=\"highlight\">50% health</span>, gain additional <span class=\"highlight\">Bullet Resist</span>.",
+    "stats": [
+      {
+        "key": "OutOfCombatHealthRegen",
+        "label": "Out of Combat Regen",
+        "value": "+3"
+      },
+      {
+        "key": "BulletResist",
+        "label": "Bullet Resist",
+        "value": "+30%"
+      }
+    ],
+    "icon": "vitality/bullet_resilience_psd.png"
+  },
+  {
+    "id": "upgrade_counterspell",
+    "name": "Counterspell",
+    "category": "vitality",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": false,
+    "description": "Your next parry protects you from the damage and effects of enemy abilities and items. On a successful spell parry Heal and gain Move Speed and Spirit.",
+    "description_html": "Your next parry <span class=\"highlight\">protects you from the damage and effects of enemy abilities and items</span>. On a successful spell parry Heal and gain Move Speed and Spirit.",
+    "stats": [
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+50"
+      },
+      {
+        "key": "SpiritPowerInnate",
+        "label": "Spirit Power",
+        "value": "+5"
+      },
+      {
+        "key": "SpiritPower",
+        "label": "Spirit Power",
+        "value": "20"
+      },
+      {
+        "key": "BonusMoveSpeed",
+        "label": "Move Speed",
+        "value": "+1.75 m"
+      },
+      {
+        "key": "BuffDuration",
+        "label": "Buff Duration",
+        "value": "6s"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "23s"
+      },
+      {
+        "key": "SpellParryDuration",
+        "label": "Spell Parry Duration",
+        "value": "0.8s"
+      }
+    ],
+    "icon": "vitality/counterspell_psd.png"
+  },
+  {
+    "id": "upgrade_reduce_debuff_duration",
+    "name": "Dispel Magic",
+    "category": "vitality",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": true,
+    "description": "Purge all non-ultimate negative effects currently applied to you. If any effects were removed, heal yourself and gain a move speed bonus. \nCannot be used while Stunned or Slept.",
+    "description_html": "<span class=\"highlight\">Purge all non-ultimate negative effects</span> currently applied to you. If any effects were removed, <span class=\"highlight\">heal yourself</span> and gain a <span class=\"highlight\">move speed bonus</span>. <br><span class=\"diminish\">Cannot be used while Stunned or Slept.</span>",
+    "stats": [
+      {
+        "key": "TechResist",
+        "label": "Spirit Resist",
+        "value": "+10%"
+      },
+      {
+        "key": "HealOnActivate",
+        "label": "HP Healed On Activate",
+        "value": "250"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "45s"
+      },
+      {
+        "key": "ActiveBonusMoveSpeed",
+        "label": "Move Speed",
+        "value": "+2m"
+      },
+      {
+        "key": "BuffDuration",
+        "label": "Buff Duration",
+        "value": "3s"
+      }
+    ],
+    "icon": "vitality/debuff_remover_psd.png"
+  },
+  {
+    "id": "upgrade_chonky",
+    "name": "Fortitude",
+    "category": "vitality",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": false,
+    "description": "After not taking damage for a period, gain health regen.\n\nWhen you are above 75% health, you have bonus Move Speed.",
+    "description_html": "After not taking damage for a period, gain health regen.<br><br>When you are <span class=\"highlight\">above 75% health</span>, you have bonus <span class=\"highlight\">Move Speed</span>.",
+    "stats": [
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+375"
+      },
+      {
+        "key": "RestoreDelay",
+        "label": "Restore Delay",
+        "value": "+10 s"
+      },
+      {
+        "key": "HealLifePercentOutOfCombat",
+        "label": "Max Health Regen",
+        "value": "+2.25 %"
+      },
+      {
+        "key": "BonusMoveSpeed",
+        "label": "Move Speed",
+        "value": "+1.5 m"
+      }
+    ],
+    "icon": "vitality/fortitude_psd.png"
+  },
+  {
+    "id": "upgrade_fury_trance",
+    "name": "Fury Trance",
+    "category": "vitality",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": true,
+    "description": "Grants Fire Rate, Spirit Resistance and Move Speed, and removes the Move Speed penalty while shooting, but Silences you and disables stamina usage and regeneration.",
+    "description_html": "Grants <span class=\"highlight\">Fire Rate</span>, <span class=\"highlight\">Spirit Resistance</span> and <span class=\"highlight\">Move Speed</span>, and removes the <span class=\"highlight\">Move Speed</span> penalty while shooting, but <span class=\"highlight\">Silences</span> you and <span class=\"highlight\">disables stamina usage and regeneration</span>.",
+    "stats": [
+      {
+        "key": "BulletLifestealPercent",
+        "label": "Bullet Lifesteal",
+        "value": "+14%"
+      },
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+100"
+      },
+      {
+        "key": "BaseAttackDamagePercent",
+        "label": "Weapon Damage",
+        "value": "+6%"
+      },
+      {
+        "key": "ActiveBonusFireRate",
+        "label": "Fire Rate",
+        "value": "32%"
+      },
+      {
+        "key": "ActiveBonusMoveSpeed",
+        "label": "Move Speed",
+        "value": "+1m"
+      },
+      {
+        "key": "TechResist",
+        "label": "Spirit Resist",
+        "value": "+40%"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "18s"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "6.5s"
+      }
+    ],
+    "icon": "vitality/fury_trance_psd.png"
+  },
+  {
+    "id": "upgrade_health_nova",
+    "name": "Healing Nova",
+    "category": "vitality",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": true,
+    "description": "Heal yourself and nearby allies.",
+    "description_html": "<span class=\"highlight\">Heal</span> yourself and nearby allies.",
+    "stats": [
+      {
+        "key": "TechRangeMultiplier",
+        "label": "Ability Range",
+        "value": "+5%"
+      },
+      {
+        "key": "SpiritPower",
+        "label": "Spirit Power",
+        "value": "8"
+      },
+      {
+        "key": "TotalHealthRegen",
+        "label": "Total HP Regen",
+        "value": "325"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "60s"
+      },
+      {
+        "key": "RegenDuration",
+        "label": "Regen Duration",
+        "value": "2s"
+      }
+    ],
+    "icon": "vitality/healing_nova_psd.png"
+  },
+  {
+    "id": "upgrade_boxing_glove",
+    "name": "Lifestrike",
+    "category": "vitality",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": false,
+    "description": "Your Melee Attack applies Movement Slow and heals you for a percentage of the Melee Damage dealt plus a fixed amount. \n\nThis heal is 40% effective vs non-heroes. \nCooldown is 1.5x as long for Light Melee hits.",
+    "description_html": "Your <span class=\"highlight\">Melee Attack</span> applies <span class=\"highlight\">Movement Slow</span> and <span class=\"highlight\">heals you</span> for a percentage of the <span class=\"highlight\">Melee Damage</span> dealt plus a fixed amount. <span class=\"diminish\"><br><br>This heal is 40% effective vs non-heroes. <br>Cooldown is 1.5x as long for Light Melee hits.</span>",
+    "stats": [
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+125"
+      },
+      {
+        "key": "BonusMeleeDamagePercent",
+        "label": "Melee Damage",
+        "value": "+16%"
+      },
+      {
+        "key": "SlowPercent",
+        "label": "Move Speed",
+        "value": "48%"
+      },
+      {
+        "key": "LifestealHeal",
+        "label": "Heal on Melee Hit",
+        "value": "120"
+      },
+      {
+        "key": "LifestealHealPercent",
+        "label": "Melee Hit Heal",
+        "value": "35%"
+      },
+      {
+        "key": "SlowDuration",
+        "label": "Slow Duration",
+        "value": "2.5s"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "4s"
+      }
+    ],
+    "icon": "vitality/lifestrike_psd.png"
+  },
+  {
+    "id": "upgrade_rocket_booster",
+    "name": "Majestic Leap",
+    "category": "vitality",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": true,
+    "description": "Launch yourself high into the air and grant yourself a Barrier. While in the air, you can use the active again to drop down faster.\n\nCannot be used for 5s if attacked by enemy Hero.",
+    "description_html": "<span class=\"highlight\">Launch yourself</span> high into the air and grant yourself a <span class=\"highlight\">Barrier</span>. While in the air, you can use the active again to drop down faster.<br><br><span class=\"diminish\">Cannot be used for 5s if attacked by enemy Hero.</span>",
+    "stats": [
+      {
+        "key": "CombatBarrier",
+        "label": "Barrier",
+        "value": "200"
+      },
+      {
+        "key": "InterruptCooldown",
+        "label": "Interrupt Cooldown",
+        "value": "5s"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "45s"
+      },
+      {
+        "key": "BarrierDuration",
+        "label": "Barrier Duration",
+        "value": "8s"
+      },
+      {
+        "key": "AirControlPercentBarrier",
+        "label": "Air Control",
+        "value": "+50%"
+      }
+    ],
+    "icon": "vitality/majestic_leap_psd.png"
+  },
+  {
+    "id": "upgrade_metal_skin",
+    "name": "Metal Skin",
+    "category": "vitality",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": true,
+    "description": "Become immune to bullets.",
+    "description_html": "Become <span class=\"highlight\">immune to bullets</span>.",
+    "stats": [
+      {
+        "key": "BulletResist",
+        "label": "Bullet Resist",
+        "value": "+12%"
+      },
+      {
+        "key": "ActiveMoveSpeedPenalty",
+        "label": "Active Movespeed Penalty",
+        "value": "-1.5m"
+      },
+      {
+        "key": "GroundDashReductionPercent",
+        "label": "Dash Distance",
+        "value": "-20%"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "5s"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "24s"
+      }
+    ],
+    "icon": "vitality/metal_skin_psd.png"
+  },
+  {
+    "id": "upgrade_rescue_beam",
+    "name": "Rescue Beam",
+    "category": "vitality",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": true,
+    "description": "Heals a target allied hero and yourself for a percentage of Max Health. Once while healing, you can Pull the target towards you. Can be self-cast.",
+    "description_html": "<span class=\"highlight\">Heals</span> a target allied hero and yourself for a percentage of <span class=\"highlight\">Max Health</span>. Once while healing, you can <span class=\"highlight\">Pull</span> the target towards you. Can be self-cast.",
+    "stats": [
+      {
+        "key": "BonusSprintSpeed",
+        "label": "Sprint Speed",
+        "value": "+0.75m"
+      },
+      {
+        "key": "TechRangeMultiplier",
+        "label": "Ability Range",
+        "value": "+6%"
+      },
+      {
+        "key": "HealPercentAmount",
+        "label": "Heal Amount",
+        "value": "20%"
+      },
+      {
+        "key": "AbilityChannelTime",
+        "label": "Channel Duration",
+        "value": "2.5s"
+      },
+      {
+        "key": "AbilityCastRange",
+        "label": "Cast Range",
+        "value": "35m"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "60s"
+      }
+    ],
+    "icon": "vitality/rescue_beam_psd.png"
+  },
+  {
+    "id": "upgrade_tech_purge",
+    "name": "Spirit Resilience",
+    "category": "vitality",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": false,
+    "description": "When below 50% health, gain additional Spirit Resist.",
+    "description_html": "When below <span class=\"highlight\">50% health</span>, gain additional Spirit Resist.",
+    "stats": [
+      {
+        "key": "OutOfCombatHealthRegen",
+        "label": "Out of Combat Regen",
+        "value": "+3"
+      },
+      {
+        "key": "TechResist",
+        "label": "Spirit Resist",
+        "value": "+30%"
+      }
+    ],
+    "icon": "vitality/spirit_resilience_psd.png"
+  },
+  {
+    "id": "upgrade_superior_stamina",
+    "name": "Stamina Mastery",
+    "category": "vitality",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": false,
+    "description": "Allows an additional use of Air Jump or Air Dash before landing.",
+    "description_html": "Allows an additional use of <span class=\"highlight\">Air Jump</span> or <span class=\"highlight\">Air Dash</span> before landing.",
+    "stats": [
+      {
+        "key": "Stamina",
+        "label": "Stamina",
+        "value": "+2"
+      },
+      {
+        "key": "StaminaCooldownReduction",
+        "label": "Stamina Recovery",
+        "value": "+18%"
+      },
+      {
+        "key": "AirMoveIncreasePercent",
+        "label": "Air Jump/Dash Distance",
+        "value": "23%"
+      }
+    ],
+    "icon": "vitality/stamina_mastery_psd.png"
+  },
+  {
+    "id": "upgrade_veil_walker",
+    "name": "Veil Walker",
+    "category": "vitality",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": false,
+    "description": "Walking through a cosmic veil grants you Stealth, Heal and increased Move Speed.",
+    "description_html": "Walking through a <span class=\"highlight\">cosmic veil</span> grants you <span class=\"highlight\">Stealth</span>, <span class=\"highlight\">Heal</span> and increased <span class=\"highlight\">Move Speed</span>.",
+    "stats": [
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+125"
+      },
+      {
+        "key": "SpiritPower",
+        "label": "Spirit Power",
+        "value": "6"
+      },
+      {
+        "key": "BonusMoveSpeed",
+        "label": "Move Speed",
+        "value": "+3.5 m"
+      },
+      {
+        "key": "InvisDuration",
+        "label": "Invisibility Duration",
+        "value": "8s"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "15s"
+      }
+    ],
+    "icon": "vitality/veil_walker_psd.png"
+  },
+  {
+    "id": "upgrade_warp_stone",
+    "name": "Warp Stone",
+    "category": "vitality",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": true,
+    "description": "Teleport straight ahead, gaining Bullet Resist.",
+    "description_html": "<span class=\"highlight\">Teleport</span> straight ahead, gaining <span class=\"highlight\">Bullet Resist</span>.",
+    "stats": [
+      {
+        "key": "AbilityCastRange",
+        "label": "Cast Range",
+        "value": "11m"
+      },
+      {
+        "key": "BulletResist",
+        "label": "Bullet Resist",
+        "value": "+30%"
+      },
+      {
+        "key": "CasterBuffDuration",
+        "label": "Buff Duration",
+        "value": "6s"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "16s"
+      }
+    ],
+    "icon": "vitality/warp_stone_psd.png"
+  },
+  {
+    "id": "upgrade_cheat_death",
+    "name": "Cheat Death",
+    "category": "vitality",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": false,
+    "description": "When you would take lethal damage, instead become temporarily death immune and remove all non-stun debuffs. \n\nWhile death immune, you deal reduced damage and have reduced healing.",
+    "description_html": "When you would take lethal damage, instead become <span class=\"highlight\">temporarily death immune</span> and <span class=\"highlight\">remove all non-stun debuffs</span>. <br><br>While death immune, you deal <span class=\"highlight\">reduced damage</span> and have <span class=\"highlight\">reduced healing</span>.",
+    "stats": [
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+200"
+      },
+      {
+        "key": "BulletResist",
+        "label": "Bullet Resist",
+        "value": "+15%"
+      },
+      {
+        "key": "DeathImmunityDuration",
+        "label": "Death Immunity Duration",
+        "value": "4.5s"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "90s"
+      },
+      {
+        "key": "DeathImmunityDamageReduction",
+        "label": "Damage Reduction",
+        "value": "-60%"
+      },
+      {
+        "key": "HealAmpReceivePenaltyPercent",
+        "label": "Incoming Healing",
+        "value": "-60%"
+      }
+    ],
+    "icon": "vitality/cheat_death_psd.png"
+  },
+  {
+    "id": "upgrade_colossus",
+    "name": "Colossus",
+    "category": "vitality",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": true,
+    "description": "Grow larger in size, gaining Bullet Resist, Spirit Resist, and Melee Damage. \n\nNearby enemies suffer from Slow and have reduced dash speed.",
+    "description_html": "Grow <span class=\"highlight\">larger in size</span>, gaining Bullet Resist, Spirit Resist, and Melee Damage. <br><br>Nearby enemies suffer from Slow and have reduced <span class=\"highlight\">dash speed</span>.",
+    "stats": [
+      {
+        "key": "BonusBaseHealth",
+        "label": "Base Health",
+        "value": "25%"
+      },
+      {
+        "key": "BaseAttackDamagePercent",
+        "label": "Weapon Damage",
+        "value": "+15%"
+      },
+      {
+        "key": "BuffBulletResist",
+        "label": "Bullet Resist",
+        "value": "35%"
+      },
+      {
+        "key": "BuffTechResist",
+        "label": "Spirit Resist",
+        "value": "35%"
+      },
+      {
+        "key": "BonusMeleeDamagePercent",
+        "label": "Melee Damage",
+        "value": "+30%"
+      },
+      {
+        "key": "SlowPercent",
+        "label": "Move Speed",
+        "value": "24%"
+      },
+      {
+        "key": "Radius",
+        "label": "Radius",
+        "value": "14m"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "7s"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "37s"
+      },
+      {
+        "key": "ModelScaleGrowthTooltip",
+        "label": "Model Scale",
+        "value": "20%"
+      }
+    ],
+    "icon": "vitality/colossus_psd.png"
+  },
+  {
+    "id": "upgrade_divine_barrier",
+    "name": "Divine Barrier",
+    "category": "vitality",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": true,
+    "description": "Remove all non-stun debuffs from the target and provide them with a Barrier and Move Speed. \nCan be self-cast. Cooldown is reduced by half when cast on someone else.",
+    "description_html": "<span class=\"highlight\">Remove all non-stun debuffs</span> from the target and provide them with a <span class=\"highlight\">Barrier</span> and <span class=\"highlight\">Move Speed</span>. <span class=\"diminish\"><br>Can be self-cast. Cooldown is reduced by half when cast on someone else.</span>",
+    "stats": [
+      {
+        "key": "TechRangeMultiplier",
+        "label": "Ability Range",
+        "value": "+10%"
+      },
+      {
+        "key": "OutOfCombatHealthRegen",
+        "label": "Out of Combat Regen",
+        "value": "+1.5"
+      },
+      {
+        "key": "CombatBarrier",
+        "label": "Barrier",
+        "value": "600"
+      },
+      {
+        "key": "BonusMoveSpeed",
+        "label": "Move Speed",
+        "value": "+2.75 m"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "45s"
+      },
+      {
+        "key": "BuffDuration",
+        "label": "Buff Duration",
+        "value": "6s"
+      },
+      {
+        "key": "AbilityCastRange",
+        "label": "Cast Range",
+        "value": "40m"
+      }
+    ],
+    "icon": "vitality/divine_barrier_psd.png"
+  },
+  {
+    "id": "upgrade_diviners_kevlar",
+    "name": "Diviner's Kevlar",
+    "category": "vitality",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": false,
+    "description": "Upon casting an ultimate ability gain a Barrier and temporary Spirit Power.",
+    "description_html": "Upon casting an <span class=\"highlight\">ultimate ability</span> gain a <span class=\"highlight\">Barrier</span> and temporary <span class=\"highlight\">Spirit Power</span>.",
+    "stats": [
+      {
+        "key": "BonusAbilityDurationPercent",
+        "label": "Ability Duration",
+        "value": "+15%"
+      },
+      {
+        "key": "UltimateCooldownReduction",
+        "label": "Ultimate Cooldown Reduction",
+        "value": "+10%"
+      },
+      {
+        "key": "CombatBarrier",
+        "label": "Barrier",
+        "value": "1000"
+      },
+      {
+        "key": "TechPower",
+        "label": "Spirit Power",
+        "value": "+40"
+      },
+      {
+        "key": "BuffDuration",
+        "label": "Buff Duration",
+        "value": "20s"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "40s"
+      }
+    ],
+    "icon": "vitality/diviners_kevlar_psd.png"
+  },
+  {
+    "id": "upgrade_healbuff",
+    "name": "Healing Tempo",
+    "category": "vitality",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": false,
+    "description": "Applying Heal to yourself or an ally grants the target Fire Rate and Move Speed.\n\nDoes not apply on innate Regen or passive Bullet/Spirit Lifesteals.",
+    "description_html": "Applying Heal to yourself or an ally grants the target Fire Rate and Move Speed.<br><br><span class=\"diminish\">Does not apply on innate Regen or passive Bullet/Spirit Lifesteals.</span>",
+    "stats": [
+      {
+        "key": "HealAmpCastPercent",
+        "label": "Outgoing Healing",
+        "value": "+25%"
+      },
+      {
+        "key": "TechResist",
+        "label": "Spirit Resist",
+        "value": "+10%"
+      },
+      {
+        "key": "BonusHealthRegen",
+        "label": "Health Regen",
+        "value": "+6"
+      },
+      {
+        "key": "OutOfCombatHealthRegen",
+        "label": "Out of Combat Regen",
+        "value": "+4"
+      },
+      {
+        "key": "BonusFireRate",
+        "label": "Fire Rate",
+        "value": "+35%"
+      },
+      {
+        "key": "BonusMoveSpeed",
+        "label": "Move Speed",
+        "value": "+1.25 m"
+      },
+      {
+        "key": "BuffDuration",
+        "label": "Buff Duration",
+        "value": "7s"
+      }
+    ],
+    "icon": "vitality/healing_tempo_psd.png"
+  },
+  {
+    "id": "upgrade_auto_cleanse",
+    "name": "Indomitable",
+    "category": "vitality",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": false,
+    "description": "The next Stun, Chain, Immobilize, Sleep or Silence is automatically cleansed. When this happens, you gain a barrier and all your ability cooldowns get reduced by 20%.",
+    "description_html": "The next <span class=\"highlight\">Stun, Chain, Immobilize, Sleep or Silence</span> is automatically cleansed. When this happens, you gain a <span class=\"highlight\">barrier</span> and all your <span class=\"highlight\">ability cooldowns</span> get reduced by 20%.",
+    "stats": [
+      {
+        "key": "OutOfCombatHealthRegen",
+        "label": "Out of Combat Regen",
+        "value": "+2"
+      },
+      {
+        "key": "BulletResist",
+        "label": "Bullet Resist",
+        "value": "+10%"
+      },
+      {
+        "key": "TechResist",
+        "label": "Spirit Resist",
+        "value": "+10%"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "55s"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "10s"
+      }
+    ],
+    "icon": "vitality/indomitable_psd.png"
+  },
+  {
+    "id": "upgrade_infuser",
+    "name": "Infuser",
+    "category": "vitality",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": true,
+    "description": "Gain Spirit Lifesteal and Spirit Power.",
+    "description_html": "Gain <span class=\"highlight\">Spirit Lifesteal</span> and <span class=\"highlight\">Spirit Power</span>.",
+    "stats": [
+      {
+        "key": "AbilityLifestealPercentHeroPassive",
+        "label": "Spirit Lifesteal",
+        "value": "+13%"
+      },
+      {
+        "key": "TechResist",
+        "label": "Spirit Resist",
+        "value": "+10%"
+      },
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+100"
+      },
+      {
+        "key": "TechPower",
+        "label": "Spirit Power",
+        "value": "+6"
+      },
+      {
+        "key": "AbilityLifestealPercentHero",
+        "label": "Spirit Lifesteal",
+        "value": "+70%"
+      },
+      {
+        "key": "BonusSpirit",
+        "label": "Spirit Power",
+        "value": "+30"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "30s"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "7s"
+      }
+    ],
+    "icon": "vitality/infuser_psd.png"
+  },
+  {
+    "id": "upgrade_inhibitor",
+    "name": "Inhibitor",
+    "category": "vitality",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": false,
+    "description": "Your bullets build up to reduce the target's outgoing damage and apply healing reduction.",
+    "description_html": "Your bullets build up to reduce the target's <span class=\"highlight\">outgoing damage</span> and apply <span class=\"highlight\">healing reduction</span>.",
+    "stats": [
+      {
+        "key": "BaseAttackDamagePercent",
+        "label": "Weapon Damage",
+        "value": "+10%"
+      },
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+150"
+      },
+      {
+        "key": "OutgoingDamagePenaltyPercent",
+        "label": "Damage Penalty",
+        "value": "-30%"
+      },
+      {
+        "key": "HealAmpReceivePenaltyPercent",
+        "label": "Incoming Healing",
+        "value": "-40%"
+      },
+      {
+        "key": "DebuffDuration",
+        "label": "Debuff Duration",
+        "value": "5s"
+      }
+    ],
+    "icon": "vitality/inhibitor_psd.png"
+  },
+  {
+    "id": "upgrade_juggernaut",
+    "name": "Juggernaut",
+    "category": "vitality",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": false,
+    "description": "Enemies that shoot you have their Fire Rate slowed.",
+    "description_html": "Enemies that shoot you have their <span class=\"highlight\">Fire Rate</span> slowed.",
+    "stats": [
+      {
+        "key": "SlowResistancePercent",
+        "label": "Slow Resist",
+        "value": "+50%"
+      },
+      {
+        "key": "BonusMoveSpeed",
+        "label": "Move Speed",
+        "value": "+2.5 m"
+      },
+      {
+        "key": "MeleeResistPercent",
+        "label": "Melee Resist",
+        "value": "+25%"
+      },
+      {
+        "key": "BonusHealthRegen",
+        "label": "Health Regen",
+        "value": "+8"
+      },
+      {
+        "key": "FireRateSlow",
+        "label": "Fire Rate",
+        "value": "40%"
+      },
+      {
+        "key": "FireRateSlowDuration",
+        "label": "Duration",
+        "value": "4s"
+      }
+    ],
+    "icon": "vitality/juggernaut_psd.png"
+  },
+  {
+    "id": "upgrade_damage_recycler",
+    "name": "Leech",
+    "category": "vitality",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": false,
+    "description": "Reduces the effect of enemy applied healing reduction.",
+    "description_html": "Reduces the effect of enemy applied <span class=\"highlight\">healing reduction</span>.",
+    "stats": [
+      {
+        "key": "AbilityLifestealPercentHero",
+        "label": "Spirit Lifesteal",
+        "value": "+28%"
+      },
+      {
+        "key": "BulletLifestealPercent",
+        "label": "Bullet Lifesteal",
+        "value": "+28%"
+      },
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+180"
+      },
+      {
+        "key": "BaseAttackDamagePercent",
+        "label": "Weapon Damage",
+        "value": "+12%"
+      },
+      {
+        "key": "TechPower",
+        "label": "Spirit Power",
+        "value": "+12"
+      }
+    ],
+    "icon": "vitality/leech_psd.png"
+  },
+  {
+    "id": "upgrade_phantom_strike",
+    "name": "Phantom Strike",
+    "category": "vitality",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": true,
+    "description": "Teleport to an enemy target and pull them to the ground. Dealing damage, Move speed reduction and Disarm.",
+    "description_html": "<span class=\"highlight\">Teleport</span> to an enemy target and pull them to the ground. Dealing <span class=\"highlight\">damage</span>, <span class=\"highlight\">Move speed</span> reduction and <span class=\"highlight\">Disarm</span>.",
+    "stats": [
+      {
+        "key": "BaseAttackDamagePercent",
+        "label": "Weapon Damage",
+        "value": "+15%"
+      },
+      {
+        "key": "TechPower",
+        "label": "Spirit Power",
+        "value": "+8"
+      },
+      {
+        "key": "SlowPercent",
+        "label": "Move Speed",
+        "value": "40%"
+      },
+      {
+        "key": "AbilityCastRange",
+        "label": "Cast Range",
+        "value": "25m"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "35s"
+      },
+      {
+        "key": "SlowDuration",
+        "label": "Slow Duration",
+        "value": "3s"
+      }
+    ],
+    "icon": "vitality/phantom_strike_psd.png"
+  },
+  {
+    "id": "upgrade_deflecting_armor",
+    "name": "Plated Armor",
+    "category": "vitality",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": false,
+    "description": "Gain a chance to either deflect incoming bullets, preventing all Weapon Damage or prevent all on-hit effects from bullets.",
+    "description_html": "Gain a chance to either deflect incoming bullets, preventing all Weapon Damage or prevent all <span class=\"highlight\">on-hit effects</span> from bullets.",
+    "stats": [
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+130"
+      },
+      {
+        "key": "DeflectionPercent",
+        "label": "Deflection Percent",
+        "value": "30%"
+      },
+      {
+        "key": "BulletProcDeflectionPercent",
+        "label": "On-Hit Prevention Percent",
+        "value": "50%"
+      }
+    ],
+    "icon": "vitality/plated_armor_psd.png"
+  },
+  {
+    "id": "upgrade_siphon_bullets",
+    "name": "Siphon Bullets",
+    "category": "vitality",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": false,
+    "description": "Your bullets temporarily steal Max HP from enemies. Enemies regain their stolen health when the debuff expires.",
+    "description_html": "Your bullets temporarily <span class=\"highlight\">steal Max HP</span> from enemies. Enemies regain their stolen health when the debuff expires.",
+    "stats": [
+      {
+        "key": "BaseAttackDamagePercent",
+        "label": "Weapon Damage",
+        "value": "+15%"
+      },
+      {
+        "key": "BulletResist",
+        "label": "Bullet Resist",
+        "value": "+10%"
+      },
+      {
+        "key": "StealDuration",
+        "label": "Steal Duration",
+        "value": "17s"
+      },
+      {
+        "key": "ProcCooldown",
+        "label": "Max Frequency",
+        "value": "1.2s"
+      }
+    ],
+    "icon": "vitality/siphon_bullets_psd.png"
+  },
+  {
+    "id": "upgrade_spellbreaker",
+    "name": "Spellbreaker",
+    "category": "vitality",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": false,
+    "description": "The next instance of high Spirit Damage you take is significantly reduced.",
+    "description_html": "The next instance of high Spirit Damage you take is significantly reduced.",
+    "stats": [
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+90"
+      },
+      {
+        "key": "TechResist",
+        "label": "Spirit Resist",
+        "value": "+18%"
+      },
+      {
+        "key": "StatusResistancePercent",
+        "label": "Debuff Resist",
+        "value": "+25%"
+      },
+      {
+        "key": "SpiritDamageReductionProc",
+        "label": "Spirit Damage Reduction",
+        "value": "65%"
+      },
+      {
+        "key": "DamageThreshold",
+        "label": "Damage Threshold",
+        "value": "175"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "9s"
+      }
+    ],
+    "icon": "vitality/spellbreaker_psd.png"
+  },
+  {
+    "id": "upgrade_unstoppable",
+    "name": "Unstoppable",
+    "category": "vitality",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": true,
+    "description": "Temporarily suppress negative status effects and become immune to Stun, Silence, Sleep, Root, and Disarm. \nCannot be used while Stunned or Slept.",
+    "description_html": "Temporarily suppress <span class=\"highlight\">negative status effects</span> and become <span class=\"highlight\">immune</span> to <span class=\"highlight\">Stun, Silence, Sleep, Root, and Disarm</span>. <br>Cannot be used while <span class=\"highlight\">Stunned</span> or <span class=\"highlight\">Slept</span>.",
+    "stats": [
+      {
+        "key": "StatusResistancePercent",
+        "label": "Debuff Resist",
+        "value": "+25%"
+      },
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+125"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "60s"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "5.5s"
+      }
+    ],
+    "icon": "vitality/unstoppable_psd.png"
+  },
+  {
+    "id": "upgrade_surging_power",
+    "name": "Vampiric Burst",
+    "category": "vitality",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": true,
+    "description": "Grants Lifesteal, Fire Rate, and Ammo. This added Ammo is not limited by your max magazine size.",
+    "description_html": "Grants <span class=\"highlight\">Lifesteal</span>, <span class=\"highlight\">Fire Rate</span>, and <span class=\"highlight\">Ammo</span>. This added Ammo is not limited by your max magazine size.",
+    "stats": [
+      {
+        "key": "BulletLifestealPercent",
+        "label": "Bullet Lifesteal",
+        "value": "+13%"
+      },
+      {
+        "key": "BulletResist",
+        "label": "Bullet Resist",
+        "value": "+10%"
+      },
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+100"
+      },
+      {
+        "key": "BaseAttackDamagePercent",
+        "label": "Weapon Damage",
+        "value": "+6%"
+      },
+      {
+        "key": "ActiveBonusLifesteal",
+        "label": "Bullet Lifesteal",
+        "value": "70%"
+      },
+      {
+        "key": "ActiveBonusFireRate",
+        "label": "Fire Rate",
+        "value": "34%"
+      },
+      {
+        "key": "ActiveReloadPercent",
+        "label": "Ammo",
+        "value": "75%"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "30s"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "5s"
+      }
+    ],
+    "icon": "vitality/vampiric_burst_psd.png"
+  },
+  {
+    "id": "upgrade_absorbing_armor",
+    "name": "Witchmail",
+    "category": "vitality",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": false,
+    "description": "Taking heavy hits of Spirit Damage from an enemy reduces a random ability cooldown.",
+    "description_html": "Taking heavy hits of Spirit Damage from an enemy reduces a <span class=\"highlight\">random ability cooldown</span>.",
+    "stats": [
+      {
+        "key": "TechResist",
+        "label": "Spirit Resist",
+        "value": "+22%"
+      },
+      {
+        "key": "TechPower",
+        "label": "Spirit Power",
+        "value": "+14"
+      },
+      {
+        "key": "CooldownReductionPerHit",
+        "label": "Cooldown Reduction per Hit",
+        "value": "4s"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "1s"
+      },
+      {
+        "key": "DamageThreshold",
+        "label": "Damage Threshold",
+        "value": "75"
+      }
+    ],
+    "icon": "vitality/witchmail_psd.png"
+  },
+  {
+    "id": "upgrade_close_range",
+    "name": "Close Quarters",
+    "category": "weapon",
+    "tier": 1,
+    "cost": 800,
+    "mode": "standard",
+    "active": false,
+    "description": "Deal additional Weapon Damage when in close range to your target.",
+    "description_html": "Deal additional <span class=\"highlight\">Weapon Damage</span> when in <span class=\"highlight\">close range</span> to your target.",
+    "stats": [
+      {
+        "key": "MeleeResistPercent",
+        "label": "Melee Resist",
+        "value": "+20%"
+      },
+      {
+        "key": "CloseRangeBonusDamageRange",
+        "label": "Close Range",
+        "value": "15m"
+      },
+      {
+        "key": "CloseRangeBonusWeaponPower",
+        "label": "Weapon Damage",
+        "value": "+20%"
+      }
+    ],
+    "icon": "weapon/close_quarters_psd.png"
+  },
+  {
+    "id": "upgrade_clip_size",
+    "name": "Extended Magazine",
+    "category": "weapon",
+    "tier": 1,
+    "cost": 800,
+    "mode": "standard",
+    "active": false,
+    "description": "",
+    "description_html": "",
+    "stats": [
+      {
+        "key": "BaseAttackDamagePercent",
+        "label": "Weapon Damage",
+        "value": "+8%"
+      },
+      {
+        "key": "BonusClipSizePercent",
+        "label": "Max Ammo",
+        "value": "+30%"
+      }
+    ],
+    "icon": "weapon/basic_magazine_psd.png"
+  },
+  {
+    "id": "upgrade_headshot_booster",
+    "name": "Headshot Booster",
+    "category": "weapon",
+    "tier": 1,
+    "cost": 800,
+    "mode": "standard",
+    "active": false,
+    "description": "Your next headshot against an enemy Hero deals Bonus Weapon Damage.",
+    "description_html": "Your next <span class=\"highlight\">headshot</span> against an enemy Hero deals Bonus Weapon Damage.",
+    "stats": [
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+30"
+      },
+      {
+        "key": "HeadShotBonusDamage",
+        "label": "Head Shot Bonus Damage",
+        "value": "+45"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "9s"
+      }
+    ],
+    "icon": "weapon/headshot_booster_psd.png"
+  },
+  {
+    "id": "upgrade_high_velocity_mag",
+    "name": "High-Velocity Rounds",
+    "category": "weapon",
+    "tier": 1,
+    "cost": 800,
+    "mode": "standard",
+    "active": false,
+    "description": "",
+    "description_html": "",
+    "stats": [
+      {
+        "key": "BaseAttackDamagePercent",
+        "label": "Weapon Damage",
+        "value": "+8%"
+      },
+      {
+        "key": "BonusBulletSpeedPercent",
+        "label": "Bullet Velocity",
+        "value": "+60%"
+      }
+    ],
+    "icon": "weapon/high_velocity_rounds_psd.png"
+  },
+  {
+    "id": "upgrade_non_player_bonus",
+    "name": "Monster Rounds",
+    "category": "weapon",
+    "tier": 1,
+    "cost": 800,
+    "mode": "standard",
+    "active": false,
+    "description": "",
+    "description_html": "",
+    "stats": [
+      {
+        "key": "OutOfCombatHealthRegen",
+        "label": "Out of Combat Regen",
+        "value": "+1"
+      },
+      {
+        "key": "NonPlayerBonusWeaponPower",
+        "label": "Weapon Damage vs. NPCs",
+        "value": "+25%"
+      },
+      {
+        "key": "NonPlayerBulletResist",
+        "label": "Bullet Resist vs. NPCs",
+        "value": "+25%"
+      }
+    ],
+    "icon": "weapon/monster_rounds_psd.png"
+  },
+  {
+    "id": "upgrade_rapid_rounds",
+    "name": "Rapid Rounds",
+    "category": "weapon",
+    "tier": 1,
+    "cost": 800,
+    "mode": "standard",
+    "active": false,
+    "description": "",
+    "description_html": "",
+    "stats": [
+      {
+        "key": "BonusFireRate",
+        "label": "Fire Rate",
+        "value": "+9%"
+      }
+    ],
+    "icon": "weapon/rapid_rounds_psd.png"
+  },
+  {
+    "id": "upgrade_medic_bullets",
+    "name": "Restorative Shot",
+    "category": "weapon",
+    "tier": 1,
+    "cost": 800,
+    "mode": "standard",
+    "active": false,
+    "description": "Your next bullet will heal you based on what target you hit.",
+    "description_html": "Your next bullet will <span class=\"highlight\">heal</span> you based on what target you hit.",
+    "stats": [
+      {
+        "key": "BaseAttackDamagePercent",
+        "label": "Weapon Damage",
+        "value": "+6%"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "6s"
+      },
+      {
+        "key": "HealFromHero",
+        "label": "Healing From Heroes",
+        "value": "50"
+      },
+      {
+        "key": "HealFromNPC",
+        "label": "Healing From NPCs / Orbs",
+        "value": "20"
+      }
+    ],
+    "icon": "weapon/restorative_shot_psd.png"
+  },
+  {
+    "id": "upgrade_active_reload",
+    "name": "Active Reload",
+    "category": "weapon",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": false,
+    "description": "While reloading, pressing [Reload] during the highlighted portion will instantly finish your reload and grant you Fire Rate, Bullet Lifesteal and Move Speed.",
+    "description_html": "While reloading, pressing [Reload] during the highlighted portion will <span class=\"highlight\">instantly finish your reload</span> and grant you <span class=\"highlight\">Fire Rate</span>, <span class=\"highlight\">Bullet Lifesteal</span> and <span class=\"highlight\">Move Speed</span>.",
+    "stats": [
+      {
+        "key": "BonusClipSizePercent",
+        "label": "Max Ammo",
+        "value": "+20%"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "12s"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "7s"
+      },
+      {
+        "key": "BonusFireRate",
+        "label": "Fire Rate",
+        "value": "+25%"
+      },
+      {
+        "key": "BulletLifestealPercent",
+        "label": "Bullet Lifesteal",
+        "value": "+16%"
+      },
+      {
+        "key": "BonusMoveSpeed",
+        "label": "Move Speed",
+        "value": "+0.75 m"
+      }
+    ],
+    "icon": "weapon/active_reload_psd.png"
+  },
+  {
+    "id": "upgrade_fleetfoot_boots",
+    "name": "Fleetfoot",
+    "category": "weapon",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": true,
+    "description": "Removes the Move Speed penalty while shooting.\n\nGain bonus Move Speed and Slow Resistance.",
+    "description_html": "Removes the <span class=\"highlight\">Move Speed</span> penalty while shooting.<br><br>Gain bonus <span class=\"highlight\">Move Speed</span> and <span class=\"highlight\">Slow Resistance</span>.",
+    "stats": [
+      {
+        "key": "BaseAttackDamagePercent",
+        "label": "Weapon Damage",
+        "value": "+6%"
+      },
+      {
+        "key": "SlideScale",
+        "label": "Slide Distance",
+        "value": "35%"
+      },
+      {
+        "key": "BulletResist",
+        "label": "Bullet Resist",
+        "value": "+6%"
+      },
+      {
+        "key": "ActiveBonusMoveSpeed",
+        "label": "Move Speed",
+        "value": "+3m"
+      },
+      {
+        "key": "SlowResistancePercent",
+        "label": "Slow Resist",
+        "value": "+40%"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "5s"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "16s"
+      }
+    ],
+    "icon": "weapon/fleetfoot_psd.png"
+  },
+  {
+    "id": "upgrade_intensifying_clip",
+    "name": "Intensifying Magazine",
+    "category": "weapon",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": false,
+    "description": "Increases Weapon Damage as you continuously fire your weapon.",
+    "description_html": "Increases <span class=\"highlight\">Weapon Damage</span> as you continuously fire your weapon.",
+    "stats": [
+      {
+        "key": "BonusClipSizePercent",
+        "label": "Max Ammo",
+        "value": "+20%"
+      },
+      {
+        "key": "BaseAttackDamagePercentAtMaxDuration",
+        "label": "Max Weapon Damage",
+        "value": "45%"
+      },
+      {
+        "key": "ShootDurationForMax",
+        "label": "Time for Max Damage",
+        "value": "2.5s"
+      }
+    ],
+    "icon": "weapon/intensifying_magazine_psd.png"
+  },
+  {
+    "id": "upgrade_kinetic_sash",
+    "name": "Kinetic Dash",
+    "category": "weapon",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": false,
+    "description": "When you Dash-Jump you gain Fire Rate and bonus Ammo until your next reload. Lasts up to 7s.",
+    "description_html": "When you <span class=\"highlight\">Dash-Jump</span> you gain <span class=\"highlight\">Fire Rate</span> and bonus <span class=\"highlight\">Ammo</span> until your next reload. Lasts up to 7s.",
+    "stats": [
+      {
+        "key": "Stamina",
+        "label": "Stamina",
+        "value": "+1"
+      },
+      {
+        "key": "StaminaCooldownReduction",
+        "label": "Stamina Recovery",
+        "value": "+12%"
+      },
+      {
+        "key": "BonusFireRate",
+        "label": "Fire Rate",
+        "value": "+25%"
+      },
+      {
+        "key": "BonusClipSize",
+        "label": "Ammo",
+        "value": "+6"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "7s"
+      }
+    ],
+    "icon": "weapon/kinetic_dash_psd.png"
+  },
+  {
+    "id": "upgrade_long_range",
+    "name": "Long Range",
+    "category": "weapon",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": false,
+    "description": "Deal additional Weapon Damage when beyond a minimum distance from your target.",
+    "description_html": "Deal additional <span class=\"highlight\">Weapon Damage</span> when <span class=\"highlight\">beyond a minimum distance</span> from your target.",
+    "stats": [
+      {
+        "key": "BonusAttackRangePercent",
+        "label": "Weapon Fall-off Range",
+        "value": "+8%"
+      },
+      {
+        "key": "BonusSprintSpeed",
+        "label": "Sprint Speed",
+        "value": "+0.75m"
+      },
+      {
+        "key": "LongRangeBonusWeaponPowerMinRange",
+        "label": "Min. Distance",
+        "value": "15m"
+      },
+      {
+        "key": "LongRangeBonusWeaponPower",
+        "label": "Weapon Damage",
+        "value": "+40%"
+      }
+    ],
+    "icon": "weapon/long_range_psd.png"
+  },
+  {
+    "id": "upgrade_melee_charge",
+    "name": "Melee Charge",
+    "category": "weapon",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": false,
+    "description": "Your next Heavy Melee attack against an enemy deals increased damage.",
+    "description_html": "Your next <span class=\"highlight\">Heavy Melee</span> attack against an enemy <span class=\"highlight\">deals increased damage</span>.",
+    "stats": [
+      {
+        "key": "BonusMeleeDamagePercent",
+        "label": "Melee Damage",
+        "value": "+10%"
+      },
+      {
+        "key": "BulletResist",
+        "label": "Bullet Resist",
+        "value": "+6%"
+      },
+      {
+        "key": "MeleeDistanceScale",
+        "label": "Heavy Melee Distance",
+        "value": "50%"
+      },
+      {
+        "key": "BonusHeavyMeleeDamage",
+        "label": "Bonus Heavy Damage",
+        "value": "25%"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "5s"
+      }
+    ],
+    "icon": "weapon/melee_charge_psd.png"
+  },
+  {
+    "id": "upgrade_crackshot",
+    "name": "Mystic Shot",
+    "category": "weapon",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": false,
+    "description": "Your next bullet deals bonus Spirit Damage.",
+    "description_html": "Your next bullet deals bonus Spirit Damage.",
+    "stats": [
+      {
+        "key": "SpiritPower",
+        "label": "Spirit Power",
+        "value": "7"
+      },
+      {
+        "key": "ProcBonusMagicDamage",
+        "label": "Spirit Damage",
+        "value": "+40"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "8s"
+      }
+    ],
+    "icon": "weapon/mystic_shot_psd.png"
+  },
+  {
+    "id": "upgrade_pristine_emblem",
+    "name": "Opening Rounds",
+    "category": "weapon",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": false,
+    "description": "Your attacks have additional Weapon Damage against enemies above 50% health.",
+    "description_html": "Your attacks have additional <span class=\"highlight\">Weapon Damage</span> against <span class=\"highlight\">enemies above 50% health</span>.",
+    "stats": [
+      {
+        "key": "BonusBulletSpeedPercent",
+        "label": "Bullet Velocity",
+        "value": "+60%"
+      },
+      {
+        "key": "BaseAttackDamagePercent",
+        "label": "Weapon Damage",
+        "value": "+8%"
+      },
+      {
+        "key": "TechPower",
+        "label": "Spirit Power",
+        "value": "+7"
+      },
+      {
+        "key": "BaseAttackDamagePercentBonus",
+        "label": "Weapon Damage",
+        "value": "25%"
+      }
+    ],
+    "icon": "weapon/opening_rounds_psd.png"
+  },
+  {
+    "id": "upgrade_rechargingbullets",
+    "name": "Recharging Rush",
+    "category": "weapon",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": false,
+    "description": "Dealing significant Weapon Damage replenishes a charge for each of your charged abilities.",
+    "description_html": "Dealing significant Weapon Damage replenishes a charge for <span class=\"highlight\">each of your charged abilities</span>.",
+    "stats": [
+      {
+        "key": "BonusClipSizePercent",
+        "label": "Max Ammo",
+        "value": "+20%"
+      },
+      {
+        "key": "BaseAttackDamagePercent",
+        "label": "Weapon Damage",
+        "value": "+10%"
+      },
+      {
+        "key": "DamageThreshold",
+        "label": "Damage Threshold",
+        "value": "200"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "25s"
+      },
+      {
+        "key": "DamageWindow",
+        "label": "Time Frame",
+        "value": "3.5s"
+      }
+    ],
+    "icon": "weapon/recharging_rounds_psd.png"
+  },
+  {
+    "id": "upgrade_slowing_bullets",
+    "name": "Slowing Bullets",
+    "category": "weapon",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": false,
+    "description": "Your bullets build up a Movement Slow on enemies.",
+    "description_html": "Your bullets build up a <span class=\"highlight\">Movement Slow</span> on enemies.",
+    "stats": [
+      {
+        "key": "SlowPercent",
+        "label": "Move Speed",
+        "value": "24%"
+      },
+      {
+        "key": "GroundDashReductionPercent",
+        "label": "Dash Distance",
+        "value": "-20%"
+      },
+      {
+        "key": "SlowDuration",
+        "label": "Slow Duration",
+        "value": "3.5s"
+      }
+    ],
+    "icon": "weapon/slowing_bullets_psd.png"
+  },
+  {
+    "id": "upgrade_tech_defense_shredders",
+    "name": "Spirit Shredder",
+    "category": "weapon",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": false,
+    "description": "Your bullets apply a debuff that reduces the Spirit Resist of the target and grants you and your allies Spirit Lifesteal against them.",
+    "description_html": "Your bullets apply a debuff that reduces the <span class=\"highlight\">Spirit Resist</span> of the target and grants you and your allies <span class=\"highlight\">Spirit Lifesteal</span> against them.",
+    "stats": [
+      {
+        "key": "TechArmorDamageReduction",
+        "label": "Spirit Resist",
+        "value": "-8%"
+      },
+      {
+        "key": "AbilityLifestealPercentHero",
+        "label": "Spirit Lifesteal",
+        "value": "+10%"
+      },
+      {
+        "key": "DebuffDuration",
+        "label": "Debuff Duration",
+        "value": "8s"
+      }
+    ],
+    "icon": "weapon/spirit_shredder_bullets_psd.png"
+  },
+  {
+    "id": "upgrade_split_shot",
+    "name": "Split Shot",
+    "category": "weapon",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": true,
+    "description": "Make your weapon fire multishot. \n\n Hitting more than one Hero per attack will grant a stacking weapon damage bonus. \n\nTargets can only be hit once per multishot.",
+    "description_html": "Make your weapon fire <span class=\"highlight\">multishot</span>. <br><br> Hitting more than one Hero per attack will grant a <span class=\"highlight\">stacking weapon damage bonus</span>. <br><br><span class=\"diminish\">Targets can only be hit once per multishot.</span>",
+    "stats": [
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "27s"
+      },
+      {
+        "key": "MaxStacks",
+        "label": "Max Stacks",
+        "value": "5"
+      },
+      {
+        "key": "WeaponDamagePerStack",
+        "label": "Weapon Damage per Stack",
+        "value": "8%"
+      }
+    ],
+    "icon": "weapon/split_shot_psd.png"
+  },
+  {
+    "id": "upgrade_weapon_backstabber",
+    "name": "Stalker",
+    "category": "weapon",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": false,
+    "description": "Dealing Weapon Damage at close range opens a wound and grants you Move Speed. \n\nWounded enemies take Spirit DPS, have reduced Bullet Resist, and are revealed through walls.",
+    "description_html": "Dealing Weapon Damage at close range opens a wound and grants you Move Speed. <br><br>Wounded enemies take Spirit DPS, have reduced Bullet Resist, and are revealed <span class=\"highlight\">through walls</span>.",
+    "stats": [
+      {
+        "key": "ReduceFootstepSound",
+        "label": "Footstep Sound Distance",
+        "value": "-50%"
+      },
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+50"
+      },
+      {
+        "key": "DPS",
+        "label": "Damage Per Second",
+        "value": "17"
+      },
+      {
+        "key": "BulletResistReduction",
+        "label": "Bullet Resist",
+        "value": "-6%"
+      },
+      {
+        "key": "BonusMoveSpeed",
+        "label": "Move Speed",
+        "value": "+1.5 m"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "6s"
+      },
+      {
+        "key": "DebuffDuration",
+        "label": "Debuff Duration",
+        "value": "5s"
+      },
+      {
+        "key": "ProcRadius",
+        "label": "Close Range",
+        "value": "8m"
+      }
+    ],
+    "icon": "weapon/backstabber_psd.png"
+  },
+  {
+    "id": "upgrade_blitz_bullets",
+    "name": "Swift Striker",
+    "category": "weapon",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": false,
+    "description": "",
+    "description_html": "",
+    "stats": [
+      {
+        "key": "BonusSprintSpeed",
+        "label": "Sprint Speed",
+        "value": "+0.75m"
+      },
+      {
+        "key": "BonusFireRate",
+        "label": "Fire Rate",
+        "value": "+20%"
+      }
+    ],
+    "icon": "weapon/swift_striker_psd.png"
+  },
+  {
+    "id": "upgrade_titan_round",
+    "name": "Titanic Magazine",
+    "category": "weapon",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": false,
+    "description": "",
+    "description_html": "",
+    "stats": [
+      {
+        "key": "BaseAttackDamagePercent",
+        "label": "Weapon Damage",
+        "value": "+14%"
+      },
+      {
+        "key": "BonusClipSizePercent",
+        "label": "Max Ammo",
+        "value": "+100%"
+      }
+    ],
+    "icon": "weapon/titanic_magazine_psd.png"
+  },
+  {
+    "id": "upgrade_headshot_booster2",
+    "name": "Weakening Headshot",
+    "category": "weapon",
+    "tier": 2,
+    "cost": 1600,
+    "mode": "standard",
+    "active": false,
+    "description": "Landing a Headshot reduces their Bullet Resist.",
+    "description_html": "Landing a <span class=\"highlight\">Headshot</span> reduces their <span class=\"highlight\">Bullet Resist</span>.",
+    "stats": [
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+60"
+      },
+      {
+        "key": "BulletResistReduction",
+        "label": "Bullet Resist",
+        "value": "-12%"
+      },
+      {
+        "key": "DebuffDuration",
+        "label": "Debuff Duration",
+        "value": "12s"
+      }
+    ],
+    "icon": "weapon/weakening_headshot_psd.png"
+  },
+  {
+    "id": "upgrade_thermal_detonator",
+    "name": "Alchemical Fire",
+    "category": "weapon",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": true,
+    "description": "Throw a flask that explodes on contact, creating an area that does increasing Spirit Damage per second and reduces enemy Bullet Resist.\n\n50% less effective vs non-heroes.",
+    "description_html": "Throw a flask that explodes on contact, creating an area that does increasing Spirit Damage <span class=\"highlight\">per second</span> and reduces enemy <span class=\"highlight\">Bullet Resist</span>.<br><br>50% less effective vs non-heroes.",
+    "stats": [
+      {
+        "key": "SpiritPower",
+        "label": "Spirit Power",
+        "value": "10"
+      },
+      {
+        "key": "DPS",
+        "label": "Damage Per Second",
+        "value": "45"
+      },
+      {
+        "key": "BulletArmorReduction",
+        "label": "Bullet Resist",
+        "value": "-7%"
+      },
+      {
+        "key": "DPSMax",
+        "label": "Max DPS",
+        "value": "95"
+      },
+      {
+        "key": "Radius",
+        "label": "Radius",
+        "value": "10m"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "5s"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "30s"
+      }
+    ],
+    "icon": "weapon/alchemical_fire_psd.png"
+  },
+  {
+    "id": "upgrade_bulletshredimbue",
+    "name": "Ballistic Enchantment",
+    "category": "weapon",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": false,
+    "description": "Imbue an ability with increased range. Dealing damage with that ability grants you increased weapon damage per unique hero hit. Has reduced effect on non-heroes.",
+    "description_html": "Imbue an ability with increased <span class=\"highlight\">range</span>. Dealing damage with that ability grants you increased <span class=\"highlight\">weapon damage</span> per <span class=\"highlight\">unique hero hit</span>. Has reduced effect on non-heroes.",
+    "stats": [
+      {
+        "key": "WeaponPowerPerStack",
+        "label": "Weapon Damage per Stack",
+        "value": "+20%"
+      },
+      {
+        "key": "TechRangeMultiplier",
+        "label": "Ability Range",
+        "value": "+22%"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "20s"
+      },
+      {
+        "key": "WeaponPowerPerStackNonHero",
+        "label": "Non-Hero Weapon Damage",
+        "value": "+5%"
+      },
+      {
+        "key": "NonHeroStackLimit",
+        "label": "Non-Hero Stack Limit",
+        "value": "8"
+      }
+    ],
+    "icon": "weapon/alchemical_seal_psd.png"
+  },
+  {
+    "id": "upgrade_berserker",
+    "name": "Berserker",
+    "category": "weapon",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": false,
+    "description": "Your Weapon Damage increases as you take sustained damage.",
+    "description_html": "Your <span class=\"highlight\">Weapon Damage</span> increases as you take sustained damage.",
+    "stats": [
+      {
+        "key": "BulletResist",
+        "label": "Bullet Resist",
+        "value": "+8%"
+      },
+      {
+        "key": "WeaponPowerPerStack",
+        "label": "Weapon Damage per Stack",
+        "value": "+7%"
+      },
+      {
+        "key": "DamageToStack",
+        "label": "Damage taken to Stack",
+        "value": "120"
+      },
+      {
+        "key": "MaxStacks",
+        "label": "Max Stacks",
+        "value": "10"
+      },
+      {
+        "key": "DamageDuration",
+        "label": "Duration",
+        "value": "10s"
+      }
+    ],
+    "icon": "weapon/berserker_psd.png"
+  },
+  {
+    "id": "upgrade_blood_tribute",
+    "name": "Blood Tribute",
+    "category": "weapon",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": true,
+    "description": "Toggle: Continually sacrifice Health to improve Fire Rate, Debuff Resistance and Move Speed.",
+    "description_html": "Toggle: Continually sacrifice Health to improve Fire Rate, <span class=\"highlight\">Debuff Resistance</span> and <span class=\"highlight\">Move Speed</span>. ",
+    "stats": [
+      {
+        "key": "InnateStatusResistancePercent",
+        "label": "Debuff Resist",
+        "value": "+8%"
+      },
+      {
+        "key": "TechResist",
+        "label": "Spirit Resist",
+        "value": "+8%"
+      },
+      {
+        "key": "OutOfCombatHealthRegen",
+        "label": "Out of Combat Regen",
+        "value": "+4"
+      },
+      {
+        "key": "HealthDrainedPerSecond",
+        "label": "Health Drain",
+        "value": "50/s"
+      },
+      {
+        "key": "BonusFireRate",
+        "label": "Fire Rate",
+        "value": "+35%"
+      },
+      {
+        "key": "StatusResistancePercent",
+        "label": "Debuff Resist",
+        "value": "+35%"
+      },
+      {
+        "key": "BonusMoveSpeed",
+        "label": "Move Speed",
+        "value": "+2 m"
+      }
+    ],
+    "icon": "weapon/blood_tribute_psd.png"
+  },
+  {
+    "id": "upgrade_burst_fire",
+    "name": "Burst Fire",
+    "category": "weapon",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": false,
+    "description": "Briefly gain Fire Rate and Move Speed when one of your bullets hits an enemy hero.",
+    "description_html": "Briefly gain <span class=\"highlight\">Fire Rate</span> and <span class=\"highlight\">Move Speed</span> when one of your bullets hits an enemy hero.",
+    "stats": [
+      {
+        "key": "SlideScale",
+        "label": "Slide Distance",
+        "value": "50%"
+      },
+      {
+        "key": "BonusFireRate",
+        "label": "Fire Rate",
+        "value": "+10%"
+      },
+      {
+        "key": "ActivatedFireRate",
+        "label": "Fire Rate",
+        "value": "+32%"
+      },
+      {
+        "key": "BonusMoveSpeed",
+        "label": "Move Speed",
+        "value": "+1.25 m"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "4.5s"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "9s"
+      }
+    ],
+    "icon": "weapon/burst_fire_psd.png"
+  },
+  {
+    "id": "upgrade_non_player_bonus_sacrifice",
+    "name": "Cultist Sacrifice",
+    "category": "weapon",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": true,
+    "description": "Target an enemy NPC and consume it for 170% Bonus Souls and grants a powerful long lasting buff.",
+    "description_html": "Target an enemy NPC and consume it for <span class=\"highlight\">170% Bonus Souls</span> and grants a powerful long lasting buff.",
+    "stats": [
+      {
+        "key": "OutOfCombatHealthRegen",
+        "label": "Out of Combat Regen",
+        "value": "+2"
+      },
+      {
+        "key": "NonPlayerBonusWeaponPower",
+        "label": "Weapon Damage vs. NPCs",
+        "value": "+30%"
+      },
+      {
+        "key": "NonPlayerBulletResist",
+        "label": "Bullet Resist vs. NPCs",
+        "value": "+30%"
+      },
+      {
+        "key": "BaseAttackDamagePercent",
+        "label": "Weapon Damage",
+        "value": "+10%"
+      },
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+50"
+      },
+      {
+        "key": "TechRangeMultiplier",
+        "label": "Ability Range",
+        "value": "+12%"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "270s"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "160s"
+      }
+    ],
+    "icon": "weapon/cultist_sacrifice_psd.png"
+  },
+  {
+    "id": "upgrade_reinforcing_casings",
+    "name": "Escalating Resilience",
+    "category": "weapon",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": false,
+    "description": "Grants Bullet Resist when your bullets hit an enemy hero. Each shot can only grant one stack.",
+    "description_html": "Grants <span class=\"highlight\">Bullet Resist</span> when your bullets hit an enemy hero. <span class=\"highlight\">Each shot can only grant one stack.</span>",
+    "stats": [
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+75"
+      },
+      {
+        "key": "BaseAttackDamagePercent",
+        "label": "Weapon Damage",
+        "value": "+18%"
+      },
+      {
+        "key": "BonusClipSizePercent",
+        "label": "Max Ammo",
+        "value": "+35%"
+      },
+      {
+        "key": "MaxArmorStacks",
+        "label": "Max Bullet Resist",
+        "value": "30%"
+      },
+      {
+        "key": "BulletResistPerStack",
+        "label": "Bullet Resist per Stack",
+        "value": "2%"
+      },
+      {
+        "key": "BulletResistDuration",
+        "label": "Stack Duration",
+        "value": "24s"
+      }
+    ],
+    "icon": "weapon/escalating_resilience_psd.png"
+  },
+  {
+    "id": "upgrade_express_shot",
+    "name": "Express Shot",
+    "category": "weapon",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": false,
+    "description": "Your next attack will fire twice in quick succession with increased damage and velocity. This attack consumes extra ammo.",
+    "description_html": "Your next attack will <span class=\"highlight\">fire twice</span> in quick succession with <span class=\"highlight\">increased damage</span> and velocity. This attack consumes extra ammo.",
+    "stats": [
+      {
+        "key": "BaseAttackDamagePercent",
+        "label": "Weapon Damage",
+        "value": "+8%"
+      },
+      {
+        "key": "BonusBulletSpeedPercent",
+        "label": "Bullet Velocity",
+        "value": "+60%"
+      },
+      {
+        "key": "ProcAmmoConsumed",
+        "label": "Extra Ammo Consumed",
+        "value": "2"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "8s"
+      }
+    ],
+    "icon": "weapon/express_shot_psd.png"
+  },
+  {
+    "id": "upgrade_headhunter",
+    "name": "Headhunter",
+    "category": "weapon",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": false,
+    "description": "Your next headshot against an enemy Hero deals Bonus Weapon Damage, Heal you, and briefly grants Move Speed.",
+    "description_html": "Your next <span class=\"highlight\">headshot</span> against an enemy Hero deals Bonus Weapon Damage, Heal you, and briefly grants Move Speed.",
+    "stats": [
+      {
+        "key": "BaseAttackDamagePercent",
+        "label": "Weapon Damage",
+        "value": "+5%"
+      },
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+50"
+      },
+      {
+        "key": "HeadShotBonusDamage",
+        "label": "Head Shot Bonus Damage",
+        "value": "+75"
+      },
+      {
+        "key": "HealPercentPerHeadshot",
+        "label": "Heal Per Headshot",
+        "value": "4%"
+      },
+      {
+        "key": "BonusMoveSpeed",
+        "label": "Move Speed",
+        "value": "+1.75 m"
+      },
+      {
+        "key": "MovementSpeedBonusDuration",
+        "label": "Move Speed Duration",
+        "value": "3s"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "8s"
+      }
+    ],
+    "icon": "weapon/headhunter_psd.png"
+  },
+  {
+    "id": "upgrade_dps_aura",
+    "name": "Heroic Aura",
+    "category": "weapon",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": true,
+    "description": "Provides Bullet Resist to nearby friendly units.\n\nProvides Move Speed and Fire Rate to you and nearby allies. Minions get double value.",
+    "description_html": "Provides <span class=\"highlight\">Bullet Resist</span> to nearby friendly units.<br><br>Provides <span class=\"highlight\">Move Speed</span> and <span class=\"highlight\">Fire Rate</span> to you and nearby allies. <span class=\"highlight\">Minions</span> get double value.",
+    "stats": [
+      {
+        "key": "BonusSprintSpeed",
+        "label": "Sprint Speed",
+        "value": "+1.5m"
+      },
+      {
+        "key": "BulletResist",
+        "label": "Bullet Resist",
+        "value": "+17%"
+      },
+      {
+        "key": "Radius",
+        "label": "Radius",
+        "value": "35m"
+      },
+      {
+        "key": "ActiveBonusMoveSpeed",
+        "label": "Move Speed",
+        "value": "+2.25m"
+      },
+      {
+        "key": "BonusFireRate",
+        "label": "Fire Rate",
+        "value": "+26%"
+      },
+      {
+        "key": "ActiveRadius",
+        "label": "Active Radius",
+        "value": "35m"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "7s"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "22s"
+      }
+    ],
+    "icon": "weapon/heroic_aura_psd.png"
+  },
+  {
+    "id": "upgrade_hollow_point_rounds",
+    "name": "Hollow Point",
+    "category": "weapon",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": false,
+    "description": "When you are above 65% health, deal additional Weapon Damage and your bullets reduce enemy Bullet Resist.",
+    "description_html": "When you are <span class=\"highlight\">above 65% health</span>, deal additional <span class=\"highlight\">Weapon Damage</span> and your bullets reduce enemy <span class=\"highlight\">Bullet Resist</span>.",
+    "stats": [
+      {
+        "key": "OutOfCombatHealthRegen",
+        "label": "Out of Combat Regen",
+        "value": "+4.5"
+      },
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+125"
+      },
+      {
+        "key": "BaseAttackDamagePercent",
+        "label": "Weapon Damage",
+        "value": "+35%"
+      },
+      {
+        "key": "BulletArmorReduction",
+        "label": "Bullet Resist",
+        "value": "-10%"
+      },
+      {
+        "key": "DebuffDuration",
+        "label": "Debuff Duration",
+        "value": "8s"
+      }
+    ],
+    "icon": "weapon/hollow_point_psd.png"
+  },
+  {
+    "id": "upgrade_bullet_armor_reduction_aura",
+    "name": "Hunter's Aura",
+    "category": "weapon",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": false,
+    "description": "Reduces nearby enemies' Bullet Resist and Fire Rate. If there is only one enemy hero nearby, this effect is doubled.",
+    "description_html": "Reduces nearby enemies' <span class=\"highlight\">Bullet Resist and Fire Rate</span>. If there is only one enemy hero nearby, this <span class=\"highlight\">effect is doubled</span>.",
+    "stats": [
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+100"
+      },
+      {
+        "key": "BonusSprintSpeed",
+        "label": "Sprint Speed",
+        "value": "+0.75m"
+      },
+      {
+        "key": "BulletArmorReduction",
+        "label": "Bullet Resist",
+        "value": "-10%"
+      },
+      {
+        "key": "FireRateSlow",
+        "label": "Fire Rate",
+        "value": "15%"
+      },
+      {
+        "key": "Radius",
+        "label": "Radius",
+        "value": "15m"
+      }
+    ],
+    "icon": "weapon/hunters_aura_psd.png"
+  },
+  {
+    "id": "upgrade_close_quarter_combat",
+    "name": "Point Blank",
+    "category": "weapon",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": false,
+    "description": "When in close range to your target, gain Weapon Damage and your bullets apply a Movement Slow.",
+    "description_html": "When in <span class=\"highlight\">close range</span> to your target, gain <span class=\"highlight\">Weapon Damage</span> and your bullets apply a <span class=\"highlight\">Movement Slow</span>.",
+    "stats": [
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+75"
+      },
+      {
+        "key": "MeleeResistPercent",
+        "label": "Melee Resist",
+        "value": "+30%"
+      },
+      {
+        "key": "CloseRangeBonusWeaponPower",
+        "label": "Weapon Damage",
+        "value": "+50%"
+      },
+      {
+        "key": "SlowPercent",
+        "label": "Move Speed",
+        "value": "20%"
+      },
+      {
+        "key": "SlowDuration",
+        "label": "Slow Duration",
+        "value": "2s"
+      },
+      {
+        "key": "CloseRangeBonusDamageRange",
+        "label": "Close Range",
+        "value": "15m"
+      }
+    ],
+    "icon": "weapon/point_blank_psd.png"
+  },
+  {
+    "id": "upgrade_cloaking_device_active",
+    "name": "Shadow Weave",
+    "category": "weapon",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": true,
+    "description": "Become Stealthed. Whenever you take damage while Stealthed you get briefly revealed.\n\nAttacking or using an ability will end your stealth and start an ambush, temporarily granting you bonus Fire Rate, Spirit Power and Melee Damage.",
+    "description_html": "Become <span class=\"highlight\">Stealthed</span>. Whenever you take damage while Stealthed you get briefly revealed.<br><br><br>Attacking or using an ability will end your stealth and start an <span class=\"highlight\">ambush</span>, temporarily granting you bonus <span class=\"highlight\">Fire Rate</span>, <span class=\"highlight\">Spirit Power</span> and <span class=\"highlight\">Melee Damage</span>.",
+    "stats": [
+      {
+        "key": "OutOfCombatHealthRegen",
+        "label": "Out of Combat Regen",
+        "value": "+5"
+      },
+      {
+        "key": "BonusSprintSpeed",
+        "label": "Sprint Speed",
+        "value": "+2m"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "13s"
+      },
+      {
+        "key": "SpottedRadius",
+        "label": "Spot Radius",
+        "value": "20m"
+      },
+      {
+        "key": "InvisMoveSpeedMod",
+        "label": "Invis Sprint Speed",
+        "value": "+5m"
+      },
+      {
+        "key": "AmbushBonusFireRate",
+        "label": "Ambush Fire Rate",
+        "value": "25%"
+      },
+      {
+        "key": "AmbushBonusTechPower",
+        "label": "Ambush Spirit Power",
+        "value": "25"
+      },
+      {
+        "key": "AmbushBonusMeleeDamage",
+        "label": "Ambush Melee Damage",
+        "value": "25%"
+      },
+      {
+        "key": "AmbushDuration",
+        "label": "Ambush Duration",
+        "value": "5s"
+      }
+    ],
+    "icon": "weapon/shadow_weave_psd.png"
+  },
+  {
+    "id": "upgrade_sharpshooter",
+    "name": "Sharpshooter",
+    "category": "weapon",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": false,
+    "description": "Deal additional Weapon Damage when beyond a minimum distance from your target.",
+    "description_html": "Deal additional <span class=\"highlight\">Weapon Damage</span> when <span class=\"highlight\">beyond a minimum distance</span> from your target.",
+    "stats": [
+      {
+        "key": "BonusBulletSpeedPercent",
+        "label": "Bullet Velocity",
+        "value": "+60%"
+      },
+      {
+        "key": "BaseAttackDamagePercent",
+        "label": "Weapon Damage",
+        "value": "+10%"
+      },
+      {
+        "key": "BonusSprintSpeed",
+        "label": "Sprint Speed",
+        "value": "+1m"
+      },
+      {
+        "key": "BonusMoveSpeed",
+        "label": "Move Speed",
+        "value": "-0.7 m"
+      },
+      {
+        "key": "BonusAttackRangePercent",
+        "label": "Weapon Fall-off Range",
+        "value": "+20%"
+      },
+      {
+        "key": "BonusZoomPercent",
+        "label": "Weapon Zoom",
+        "value": "+25%"
+      },
+      {
+        "key": "LongRangeBonusWeaponPowerMinRange",
+        "label": "Min. Distance",
+        "value": "15m"
+      },
+      {
+        "key": "LongRangeBonusWeaponPower",
+        "label": "Weapon Damage",
+        "value": "+60%"
+      }
+    ],
+    "icon": "weapon/sharp_shooter_psd.png"
+  },
+  {
+    "id": "upgrade_spellslinger_headshots",
+    "name": "Spirit Rend",
+    "category": "weapon",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": false,
+    "description": "Your bullets apply a debuff that reduces the Spirit Resist of the target and grants you and your allies Spirit Lifesteal against them.\n\nLanding headshots against the target reduces their Spirit Resist further.",
+    "description_html": "Your bullets apply a debuff that reduces the <span class=\"highlight\">Spirit Resist</span> of the target and grants you and your allies <span class=\"highlight\">Spirit Lifesteal</span> against them.<br><br>Landing <span class=\"highlight\">headshots</span> against the target reduces their <span class=\"highlight\">Spirit Resist</span> further.",
+    "stats": [
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+75"
+      },
+      {
+        "key": "TechArmorDamageReduction",
+        "label": "Spirit Resist",
+        "value": "-8%"
+      },
+      {
+        "key": "AbilityLifestealPercentHero",
+        "label": "Spirit Lifesteal",
+        "value": "+10%"
+      },
+      {
+        "key": "MagicResistReduction",
+        "label": "Spirit Resist",
+        "value": "-7%"
+      },
+      {
+        "key": "DebuffDuration",
+        "label": "Debuff Duration",
+        "value": "8s"
+      },
+      {
+        "key": "MaxStacks",
+        "label": "Max Stacks",
+        "value": "4"
+      },
+      {
+        "key": "ProcCooldown",
+        "label": "Max Frequency",
+        "value": "2s"
+      }
+    ],
+    "icon": "weapon/spellslinger_headshots_psd.png"
+  },
+  {
+    "id": "upgrade_chain_lightning",
+    "name": "Tesla Bullets",
+    "category": "weapon",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": false,
+    "description": "Your bullets have a chance to shock your target. The shock will jump to a nearby enemy.",
+    "description_html": "Your bullets have a chance to <span class=\"highlight\">shock</span> your target. The <span class=\"highlight\">shock</span> will jump to a nearby enemy.",
+    "stats": [
+      {
+        "key": "DamagePerChain",
+        "label": "Shock Damage",
+        "value": "33"
+      },
+      {
+        "key": "ProcChance",
+        "label": "Proc Chance",
+        "value": "15%"
+      },
+      {
+        "key": "ProcCooldown",
+        "label": "Max Frequency",
+        "value": "0.2s"
+      },
+      {
+        "key": "ChainCount",
+        "label": "Max Jumps",
+        "value": "4"
+      },
+      {
+        "key": "ChainRadius",
+        "label": "Jump Radius",
+        "value": "8m"
+      }
+    ],
+    "icon": "weapon/tesla_bullets_psd.png"
+  },
+  {
+    "id": "upgrade_toxic_bullets",
+    "name": "Toxic Bullets",
+    "category": "weapon",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": false,
+    "description": "Your bullets build up a Bleed on enemies, causing them to lose a percentage of their Max Health over time. Also reduces Incoming Healing on the bleeding target.",
+    "description_html": "Your bullets build up a <span class=\"highlight\">Bleed</span> on enemies, causing them to lose a <span class=\"highlight\">percentage</span> of their <span class=\"highlight\">Max Health</span> over time. Also reduces <span class=\"highlight\">Incoming Healing</span> on the bleeding target.",
+    "stats": [
+      {
+        "key": "DotHealthPercent",
+        "label": "Bleed Damage",
+        "value": "1.9% DPS"
+      },
+      {
+        "key": "HealAmpReceivePenaltyPercent",
+        "label": "Incoming Healing",
+        "value": "-35%"
+      }
+    ],
+    "icon": "weapon/toxic_bullets_psd.png"
+  },
+  {
+    "id": "upgrade_weighted_shots",
+    "name": "Weighted Shots",
+    "category": "weapon",
+    "tier": 3,
+    "cost": 3200,
+    "mode": "standard",
+    "active": false,
+    "description": "Your bullets build up a Movement Slow on enemies.",
+    "description_html": "Your bullets build up a <span class=\"highlight\">Movement Slow</span> on enemies.",
+    "stats": [
+      {
+        "key": "StatusResistancePercent",
+        "label": "Debuff Resist",
+        "value": "+22%"
+      },
+      {
+        "key": "StaminaCooldownReduction",
+        "label": "Stamina Recovery",
+        "value": "-14%"
+      },
+      {
+        "key": "BonusMoveSpeed",
+        "label": "Move Speed",
+        "value": "-0.5 m"
+      },
+      {
+        "key": "BaseAttackDamagePercent",
+        "label": "Weapon Damage",
+        "value": "+30%"
+      },
+      {
+        "key": "SlowPercent",
+        "label": "Move Speed",
+        "value": "24%"
+      },
+      {
+        "key": "GroundDashReductionPercent",
+        "label": "Dash Distance",
+        "value": "-20%"
+      },
+      {
+        "key": "SlowDuration",
+        "label": "Slow Duration",
+        "value": "3.5s"
+      }
+    ],
+    "icon": "weapon/weighted_shots_psd.png"
+  },
+  {
+    "id": "upgrade_aprounds",
+    "name": "Armor Piercer",
+    "category": "weapon",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": false,
+    "description": "Your Bullets have a chance to become unavoidable, piercing through enemies and ignoring their Bullet Resistance.",
+    "description_html": "Your Bullets have a chance to become unavoidable, <span class=\"highlight\">piercing through</span> enemies and <span class=\"highlight\">ignoring their Bullet Resistance</span>.",
+    "stats": [
+      {
+        "key": "BonusBulletSpeedPercent",
+        "label": "Bullet Velocity",
+        "value": "+60%"
+      },
+      {
+        "key": "BaseAttackDamagePercent",
+        "label": "Weapon Damage",
+        "value": "+8%"
+      },
+      {
+        "key": "ProcChance",
+        "label": "Proc Chance",
+        "value": "55%"
+      }
+    ],
+    "icon": "weapon/armor_piercing_rounds_psd.png"
+  },
+  {
+    "id": "upgrade_capacitor",
+    "name": "Capacitor",
+    "category": "weapon",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": true,
+    "description": "Your bullets have a chance to shock your target. The shock will jump to a nearby enemy.\n\nLaunch a projectile that deals Spirit Icondamage, applies a strong slow that recovers over time, prevents Stamina usage and Silences their movement-based items and abilities.",
+    "description_html": "Your bullets have a chance to <span class=\"highlight\">shock</span> your target. The <span class=\"highlight\">shock</span> will jump to a nearby enemy.<br><br>Launch a projectile that deals <span class=\"highlight\">Spirit Icondamage</span>, applies a strong slow that recovers over time, <span class=\"highlight\">prevents Stamina usage</span> and <span class=\"highlight\">Silences</span> their <span class=\"highlight\">movement-based items and abilities</span>.",
+    "stats": [
+      {
+        "key": "BonusFireRate",
+        "label": "Fire Rate",
+        "value": "+5%"
+      },
+      {
+        "key": "DamagePerChain",
+        "label": "Shock Damage",
+        "value": "43"
+      },
+      {
+        "key": "ProcChance",
+        "label": "Proc Chance",
+        "value": "20%"
+      },
+      {
+        "key": "ProcCooldown",
+        "label": "Max Frequency",
+        "value": "0.2s"
+      },
+      {
+        "key": "ChainCount",
+        "label": "Max Jumps",
+        "value": "6"
+      },
+      {
+        "key": "ChainRadius",
+        "label": "Jump Radius",
+        "value": "10m"
+      },
+      {
+        "key": "Damage",
+        "label": "Damage",
+        "value": "100"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "40s"
+      },
+      {
+        "key": "SlowDuration",
+        "label": "Slow Duration",
+        "value": "3s"
+      }
+    ],
+    "icon": "weapon/capacitor_psd.png"
+  },
+  {
+    "id": "upgrade_banshee_slugs",
+    "name": "Crippling Headshot",
+    "category": "weapon",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": false,
+    "description": "Landing a Headshot will reduce their Bullet, Spirit Resist, and Incoming Healing.",
+    "description_html": "Landing a <span class=\"highlight\">Headshot</span> will reduce their <span class=\"highlight\">Bullet, Spirit Resist, and Incoming Healing</span>.",
+    "stats": [
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+125"
+      },
+      {
+        "key": "BulletResistReduction",
+        "label": "Bullet Resist",
+        "value": "-16%"
+      },
+      {
+        "key": "MagicResistReduction",
+        "label": "Spirit Resist",
+        "value": "-16%"
+      },
+      {
+        "key": "HealAmpRegenPenaltyPercent",
+        "label": "Incoming Healing",
+        "value": "-35%"
+      },
+      {
+        "key": "DebuffDuration",
+        "label": "Debuff Duration",
+        "value": "12s"
+      }
+    ],
+    "icon": "weapon/crippling_headshot_psd.png"
+  },
+  {
+    "id": "upgrade_crushing_fists",
+    "name": "Crushing Fists",
+    "category": "weapon",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": false,
+    "description": "Your next Heavy Melee attack against an enemy deals increased damage.\n\nYour Melee Damage will restore ammo and apply a stacking bullet resist debuff on enemies. Heavy melee applies 2 stacks. \n\nIf the target reaches max stacks, they will be stunned.",
+    "description_html": "Your next <span class=\"highlight\">Heavy Melee</span> attack against an enemy <span class=\"highlight\">deals increased damage</span>.<br><br>Your <span class=\"highlight\">Melee Damage</span> will <span class=\"highlight\">restore ammo</span> and apply a <span class=\"highlight\">stacking bullet resist debuff</span> on enemies. Heavy melee applies 2 stacks. <br><br>If the target reaches max stacks, they will be <span class=\"highlight\">stunned</span>.",
+    "stats": [
+      {
+        "key": "BonusMeleeDamagePercent",
+        "label": "Melee Damage",
+        "value": "+22%"
+      },
+      {
+        "key": "BulletResist",
+        "label": "Bullet Resist",
+        "value": "+12%"
+      },
+      {
+        "key": "MeleeDistanceScale",
+        "label": "Heavy Melee Distance",
+        "value": "60%"
+      },
+      {
+        "key": "BonusHeavyMeleeDamage",
+        "label": "Bonus Heavy Damage",
+        "value": "25%"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "5s"
+      },
+      {
+        "key": "LightMeleeAmmo",
+        "label": "Ammo",
+        "value": "15%"
+      },
+      {
+        "key": "BulletResistReduction",
+        "label": "Bullet Resist",
+        "value": "-5%"
+      },
+      {
+        "key": "MaxStacks",
+        "label": "Max Stacks",
+        "value": "6"
+      },
+      {
+        "key": "StunDuration",
+        "label": "Stun Duration",
+        "value": "0.75s"
+      },
+      {
+        "key": "DebuffDuration",
+        "label": "Debuff Duration",
+        "value": "8s"
+      }
+    ],
+    "icon": "weapon/crushing_fists_psd.png"
+  },
+  {
+    "id": "upgrade_fervor",
+    "name": "Frenzy",
+    "category": "weapon",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": false,
+    "description": "While you are below 50% health, you gain stat bonuses for a duration and existing debuffs on you are reduced.",
+    "description_html": "While you are <span class=\"highlight\">below 50% health</span>, you gain stat bonuses for a duration and existing debuffs on you are reduced.",
+    "stats": [
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+160"
+      },
+      {
+        "key": "BonusFireRate",
+        "label": "Fire Rate",
+        "value": "+15%"
+      },
+      {
+        "key": "BulletLifestealPercent",
+        "label": "Bullet Lifesteal",
+        "value": "+10%"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "16s"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "10s"
+      },
+      {
+        "key": "FervorMovespeed",
+        "label": "Move Speed",
+        "value": "4 m/s"
+      },
+      {
+        "key": "FervorFireRate",
+        "label": "Fire Rate",
+        "value": "40%"
+      },
+      {
+        "key": "FervorStatusResistancePercent",
+        "label": "Debuff Resist",
+        "value": "+40%"
+      }
+    ],
+    "icon": "weapon/frenzy_psd.png"
+  },
+  {
+    "id": "upgrade_glass_cannon",
+    "name": "Glass Cannon",
+    "category": "weapon",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": false,
+    "description": "Each hero kill grants permanent Fire Rate (up to a max of 8 times). Death results in the loss of 1 stack.",
+    "description_html": "Each hero kill grants <span class=\"highlight\">permanent Fire Rate</span> (up to a max of 8 times). Death results in the loss of 1 stack.",
+    "stats": [
+      {
+        "key": "BaseAttackDamagePercent",
+        "label": "Weapon Damage",
+        "value": "+80%"
+      },
+      {
+        "key": "MaxHealthLossPercent",
+        "label": "Max Health",
+        "value": "-13%"
+      },
+      {
+        "key": "FireRatePerKill",
+        "label": "Fire Rate per Kill",
+        "value": "7%"
+      }
+    ],
+    "icon": "weapon/glass_cannon_psd.png"
+  },
+  {
+    "id": "upgrade_critshot",
+    "name": "Lucky Shot",
+    "category": "weapon",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": false,
+    "description": "Your bullets have a chance to be empowered, causing them to deal bonus weapon damage on hit.\nBonus damage cannot Crit.",
+    "description_html": "Your bullets have a chance to be empowered, causing them to deal <span class=\"highlight\">bonus weapon damage</span> on hit.<br><span class=\"diminish\">Bonus damage cannot Crit.</span>",
+    "stats": [
+      {
+        "key": "BonusClipSizePercent",
+        "label": "Max Ammo",
+        "value": "+30%"
+      },
+      {
+        "key": "CritDamagePercent",
+        "label": "Bonus Weapon Damage",
+        "value": "100%"
+      },
+      {
+        "key": "ProcChance",
+        "label": "Proc Chance",
+        "value": "25%"
+      }
+    ],
+    "icon": "weapon/lucky_shot_psd.png"
+  },
+  {
+    "id": "upgrade_ricochet",
+    "name": "Ricochet",
+    "category": "weapon",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": false,
+    "description": "Your bullets will ricochet on enemies near your target, applying any bullet procs and dealing a percentage of the original damage.",
+    "description_html": "Your bullets will <span class=\"highlight\">ricochet</span> on enemies near your target, <span class=\"highlight\">applying any bullet procs</span> and <span class=\"highlight\">dealing a percentage of the original damage.</span>",
+    "stats": [
+      {
+        "key": "BonusFireRate",
+        "label": "Fire Rate",
+        "value": "+18%"
+      },
+      {
+        "key": "RicochetRadius",
+        "label": "Ricochet Range",
+        "value": "13m"
+      },
+      {
+        "key": "RicochetDamagePercent",
+        "label": "Ricochet Damage",
+        "value": "65%"
+      }
+    ],
+    "icon": "weapon/ricochet_psd.png"
+  },
+  {
+    "id": "upgrade_proc_silence",
+    "name": "Silencer",
+    "category": "weapon",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": false,
+    "description": "Your bullets reduce the target's outgoing spirit damage.\n\nYour bullets build up to a Silence. Victims are immune to the build up for 10s after silence expires.",
+    "description_html": "Your bullets reduce the target's <span class=\"highlight\">outgoing spirit damage</span>.<br><br>Your bullets build up to a <span class=\"highlight\">Silence</span>. Victims are immune to the build up for <span class=\"highlight\">10s</span> after silence expires.",
+    "stats": [
+      {
+        "key": "TechResist",
+        "label": "Spirit Resist",
+        "value": "+12%"
+      },
+      {
+        "key": "DebuffDuration",
+        "label": "Debuff Duration",
+        "value": "6s"
+      },
+      {
+        "key": "TechDamageReduction",
+        "label": "Spirit Damage Reduction",
+        "value": "-25%"
+      },
+      {
+        "key": "ImmunityDuration",
+        "label": "Immunity Duration",
+        "value": "10s"
+      }
+    ],
+    "icon": "weapon/silencer_psd.png"
+  },
+  {
+    "id": "upgrade_enchanted_holsters",
+    "name": "Spellslinger",
+    "category": "weapon",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": false,
+    "description": "While in-combat whenever you cast an ability or item, gain a stacking buff that improves fire rate and reload speed. \nEach stack refreshes the duration.",
+    "description_html": "While in-combat whenever you cast an ability or item, gain a stacking buff that improves fire rate and reload speed. <br><span class=\"diminish\">Each stack refreshes the duration.</span>",
+    "stats": [
+      {
+        "key": "CooldownReduction",
+        "label": "Ability Cooldown Reduction",
+        "value": "+5%"
+      },
+      {
+        "key": "BonusFireRate",
+        "label": "Fire Rate",
+        "value": "+11%"
+      },
+      {
+        "key": "ReloadSpeedMultipler",
+        "label": "Reload Time",
+        "value": "-10%"
+      },
+      {
+        "key": "MaxStacks",
+        "label": "Max Stacks",
+        "value": "6"
+      },
+      {
+        "key": "BuffDuration",
+        "label": "Buff Duration",
+        "value": "18s"
+      }
+    ],
+    "icon": "weapon/spell_slinger_psd.png"
+  },
+  {
+    "id": "upgrade_tech_overflow",
+    "name": "Spiritual Overflow",
+    "category": "weapon",
+    "tier": 4,
+    "cost": 6400,
+    "mode": "standard",
+    "active": false,
+    "description": "Gain bonus Fire Rate, Spirit Power and Spirit Lifesteal by charging up when shooting enemy heroes.",
+    "description_html": "Gain bonus <span class=\"highlight\">Fire Rate</span>, <span class=\"highlight\">Spirit Power</span> and <span class=\"highlight\">Spirit Lifesteal</span> by <span class=\"highlight\">charging up</span> when shooting enemy heroes.",
+    "stats": [
+      {
+        "key": "BonusAbilityDurationPercent",
+        "label": "Ability Duration",
+        "value": "+13%"
+      },
+      {
+        "key": "AbilityLifestealPercentHero",
+        "label": "Spirit Lifesteal",
+        "value": "+13%"
+      },
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+90"
+      },
+      {
+        "key": "TechPower",
+        "label": "Spirit Power",
+        "value": "+6"
+      },
+      {
+        "key": "BonusFireRate",
+        "label": "Fire Rate",
+        "value": "+25%"
+      },
+      {
+        "key": "BonusSpirit",
+        "label": "Spirit Power",
+        "value": "+30"
+      },
+      {
+        "key": "BonusSpiritLifesteal",
+        "label": "Spirit Lifesteal",
+        "value": "+10%"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "15s"
+      }
+    ],
+    "icon": "weapon/spiritual_overflow_psd.png"
+  },
+  {
+    "id": "upgrade_shivas_bracelet",
+    "name": "Frostbite Charm",
+    "category": "spirit",
+    "tier": 5,
+    "cost": 9999,
+    "mode": "street_brawl",
+    "active": false,
+    "description": "Imbued ability has its Cooldown reduced and gains Spirit Power. When the ability deals damage, freeze the target and apply bonus damage. \n\nCooldown is per target.",
+    "description_html": "Imbued ability has its <span class=\"highlight\">Cooldown reduced</span> and gains <span class=\"highlight\">Spirit Power</span>. When the ability deals damage, <span class=\"highlight\">freeze</span> the target and apply <span class=\"highlight\">bonus damage</span>. <span class=\"diminish\"><br><br>Cooldown is per target.</span>",
+    "stats": [
+      {
+        "key": "ImbuedCooldownReduction",
+        "label": "Imbued Ability Cooldown Reduction",
+        "value": "+50%"
+      },
+      {
+        "key": "ImbuedTechPower",
+        "label": "Imbued Ability Spirit Power",
+        "value": "+70"
+      },
+      {
+        "key": "Damage",
+        "label": "Damage",
+        "value": "200"
+      },
+      {
+        "key": "FreezeDuration",
+        "label": "Freeze Duration",
+        "value": "1s"
+      }
+    ],
+    "icon": "brawl/frostbite_psd.png"
+  },
+  {
+    "id": "upgrade_patrons_blessing",
+    "name": "Mystic Conduit",
+    "category": "spirit",
+    "tier": 5,
+    "cost": 9999,
+    "mode": "street_brawl",
+    "active": false,
+    "description": "Provides yourself and allies with a powerful spirit focused aura. Has reduced values on allies.\n\nDealing significant Damage to an enemy Hero within 5s causes you to heal yourself and nearby allies.",
+    "description_html": "Provides yourself and allies with a powerful spirit focused aura. Has reduced values on allies.<br><br>Dealing significant <span class=\"highlight\">Damage</span> to an enemy Hero within 5s causes you to heal yourself and nearby allies.",
+    "stats": [
+      {
+        "key": "TechRangeMultiplier",
+        "label": "Ability Range",
+        "value": "+40%"
+      },
+      {
+        "key": "CooldownReduction",
+        "label": "Ability Cooldown Reduction",
+        "value": "+40%"
+      },
+      {
+        "key": "AllyPercentage",
+        "label": "Ally Percentage",
+        "value": "+50%"
+      },
+      {
+        "key": "Radius",
+        "label": "Radius",
+        "value": "25m"
+      },
+      {
+        "key": "HealAmount",
+        "label": "Heal Amount",
+        "value": "700"
+      },
+      {
+        "key": "HealRadius",
+        "label": "Heal Radius",
+        "value": "35m"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "25s"
+      },
+      {
+        "key": "DamageThreshold",
+        "label": "Damage Threshold",
+        "value": "300"
+      }
+    ],
+    "icon": "brawl/patrons_blessing_psd.png"
+  },
+  {
+    "id": "upgrade_mystical_piano",
+    "name": "Mystical Piano",
+    "category": "spirit",
+    "tier": 5,
+    "cost": 9999,
+    "mode": "street_brawl",
+    "active": true,
+    "description": "After a short delay, enemies in the target area will be stunned and have their stamina depleted. After the stun they will be temporarily dazed.",
+    "description_html": "After a short delay, enemies in the target area will be stunned and have their stamina depleted. After the stun they will be temporarily dazed.",
+    "stats": [
+      {
+        "key": "DazeDuration",
+        "label": "Daze Duration",
+        "value": "2s"
+      },
+      {
+        "key": "StunDelay",
+        "label": "Stun Delay",
+        "value": "1.7s"
+      },
+      {
+        "key": "Radius",
+        "label": "Radius",
+        "value": "12m"
+      }
+    ],
+    "icon": "brawl/mystical_piano_psd.png"
+  },
+  {
+    "id": "upgrade_omnicharge_pendant",
+    "name": "Omnicharge Signet",
+    "category": "spirit",
+    "tier": 5,
+    "cost": 9999,
+    "mode": "street_brawl",
+    "active": false,
+    "description": "Imbue any active non-ultimate ability with Bonus Ability Charges. Already charged abilities receive more bonus charges.",
+    "description_html": "Imbue any active non-ultimate ability with <span class=\"highlight\">Bonus Ability Charges</span>. Already charged abilities receive more bonus charges.",
+    "stats": [
+      {
+        "key": "BonusSpiritForChargedAbilities",
+        "label": "Bonus Spirit Power for Charged Abilities",
+        "value": "50"
+      },
+      {
+        "key": "CooldownBetweenChargeReduction",
+        "label": "Faster Time Between Charges",
+        "value": "+70%"
+      },
+      {
+        "key": "CooldownReductionOnChargedAbilities",
+        "label": "Cooldown Reduction For Charged Abilities",
+        "value": "30%"
+      },
+      {
+        "key": "BonusAbilityCharges",
+        "label": "Bonus Ability Charges",
+        "value": "+4"
+      },
+      {
+        "key": "BonusAbilityChargesNonCharge",
+        "label": "Non Charged Ability",
+        "value": "+2"
+      }
+    ],
+    "icon": "brawl/omnicharge_pendant_psd.png"
+  },
+  {
+    "id": "upgrade_prism_blast",
+    "name": "Prism Blast",
+    "category": "spirit",
+    "tier": 5,
+    "cost": 9999,
+    "mode": "street_brawl",
+    "active": true,
+    "description": "You enter a void state and become untargetable and invincible for a short duration, during which lasers blast out and rotate around you.",
+    "description_html": "You enter a void state and become <span class=\"highlight\">untargetable and invincible</span> for a short duration, during which lasers blast out and rotate around you.",
+    "stats": [
+      {
+        "key": "DPS",
+        "label": "Damage Per Second",
+        "value": "270"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "6s"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "40s"
+      }
+    ],
+    "icon": "brawl/prism_blast_psd.png"
+  },
+  {
+    "id": "upgrade_shrink_ray",
+    "name": "Shrink Ray",
+    "category": "spirit",
+    "tier": 5,
+    "cost": 9999,
+    "mode": "street_brawl",
+    "active": true,
+    "description": "Reduces Model Size and grants Move Speed to the target. Allows usage of tunnels in this mode. Can be self-cast.",
+    "description_html": "Reduces <span class=\"highlight\">Model Size</span> and grants <span class=\"highlight\">Move Speed</span> to the target. Allows <span class=\"highlight\">usage of tunnels</span> in this mode. Can be self-cast.",
+    "stats": [
+      {
+        "key": "ModelScaleGrowthTooltip",
+        "label": "Model Scale",
+        "value": "-50%"
+      },
+      {
+        "key": "BonusMoveSpeed",
+        "label": "Move Speed",
+        "value": "+5 m"
+      },
+      {
+        "key": "BonusFireRate",
+        "label": "Fire Rate",
+        "value": "+20%"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "30s"
+      },
+      {
+        "key": "ShrinkDuration",
+        "label": "Shrink Duration",
+        "value": "60s"
+      },
+      {
+        "key": "AbilityCastRange",
+        "label": "Cast Range",
+        "value": "40m"
+      }
+    ],
+    "icon": "brawl/shrink_ray_psd.png"
+  },
+  {
+    "id": "upgrade_unstable_concoction",
+    "name": "Unstable Concoction",
+    "category": "spirit",
+    "tier": 5,
+    "cost": 9999,
+    "mode": "street_brawl",
+    "active": true,
+    "description": "Consume a concoction that grants you Unstoppable and increased speed, health, spirit and weapon damage. After a short duration you die and explode, stunning nearby enemies and dealing damage based on your maximum health. Dying this way reduces your respawn time by 50%.",
+    "description_html": "Consume a concoction that grants you <span class=\"highlight\">Unstoppable</span> and increased <span class=\"highlight\">speed, health, spirit and weapon damage</span>. After a short duration <span class=\"highlight\">you die and explode</span>, stunning nearby enemies and dealing damage based on your maximum health. Dying this way reduces your respawn time by <span class=\"highlight\">50%</span>.",
+    "stats": [
+      {
+        "key": "MaxHPDamage",
+        "label": "Max Health Damage",
+        "value": "30%"
+      },
+      {
+        "key": "StunDuration",
+        "label": "Stun Duration",
+        "value": "3s"
+      },
+      {
+        "key": "BonusMoveSpeed",
+        "label": "Move Speed",
+        "value": "+10 m"
+      },
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+3000"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "4s"
+      },
+      {
+        "key": "BaseAttackDamagePercent",
+        "label": "Weapon Damage",
+        "value": "+150%"
+      },
+      {
+        "key": "Radius",
+        "label": "Radius",
+        "value": "22m"
+      },
+      {
+        "key": "TechPower",
+        "label": "Spirit Power",
+        "value": "+150"
+      }
+    ],
+    "icon": "brawl/unstable_concoction_psd.png"
+  },
+  {
+    "id": "upgrade_celestial_guidance",
+    "name": "Celestial Blessing",
+    "category": "vitality",
+    "tier": 5,
+    "cost": 9999,
+    "mode": "street_brawl",
+    "active": true,
+    "description": "Applies an extremely powerful cleanse that replenishes your allies globally.",
+    "description_html": "Applies an extremely powerful cleanse that replenishes your allies globally.",
+    "stats": [
+      {
+        "key": "HealPercentAmount",
+        "label": "Heal Amount",
+        "value": "60%"
+      },
+      {
+        "key": "StaminaCooldownReduction",
+        "label": "Stamina Recovery",
+        "value": "+100%"
+      },
+      {
+        "key": "BuffMoveSpeedBonus",
+        "label": "Move Speed",
+        "value": "+5m"
+      },
+      {
+        "key": "MinHeal",
+        "label": "Min. Heal",
+        "value": "400"
+      },
+      {
+        "key": "BuffDuration",
+        "label": "Buff Duration",
+        "value": "6s"
+      }
+    ],
+    "icon": "brawl/celestial_guidance_psd.png"
+  },
+  {
+    "id": "upgrade_cloak_of_opportunity",
+    "name": "Cloak of Opportunity",
+    "category": "vitality",
+    "tier": 5,
+    "cost": 9999,
+    "mode": "street_brawl",
+    "active": false,
+    "description": "Block the next debuff that would apply movement lock, Stun, Chained, Immobilize, or Sleep and become Unstoppable. Also gain a Barrier and bonus Move Speed",
+    "description_html": "Block the next debuff that would apply <span class=\"highlight\">movement lock, Stun, Chained, Immobilize, or Sleep</span> and become <span class=\"highlight\">Unstoppable</span>. Also gain a <span class=\"highlight\">Barrier</span> and bonus Move Speed",
+    "stats": [
+      {
+        "key": "CombatBarrier",
+        "label": "Barrier",
+        "value": "500"
+      },
+      {
+        "key": "BonusMoveSpeed",
+        "label": "Move Speed",
+        "value": "+3 m"
+      },
+      {
+        "key": "StatusImmuneDuration",
+        "label": "Unstoppable Duration",
+        "value": "4s"
+      },
+      {
+        "key": "BuffDuration",
+        "label": "Buff Duration",
+        "value": "6s"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "12s"
+      }
+    ],
+    "icon": "brawl/cloak_of_opportunity_psd.png"
+  },
+  {
+    "id": "upgrade_electric_slippers",
+    "name": "Electric Slippers",
+    "category": "vitality",
+    "tier": 5,
+    "cost": 9999,
+    "mode": "street_brawl",
+    "active": false,
+    "description": "When sliding, evade bullets, gain fire rate and deal damage to enemies around you. \n\nCooldown is per target.",
+    "description_html": "When sliding, evade bullets, gain fire rate and deal damage to enemies around you. <span class=\"diminish\"><br><br>Cooldown is per target.</span>",
+    "stats": [
+      {
+        "key": "Stamina",
+        "label": "Stamina",
+        "value": "+2"
+      },
+      {
+        "key": "SlideScale",
+        "label": "Slide Distance",
+        "value": "80%"
+      },
+      {
+        "key": "Damage",
+        "label": "Damage",
+        "value": "100"
+      },
+      {
+        "key": "EvasionWhileSliding",
+        "label": "Evasion While Sliding",
+        "value": "60"
+      },
+      {
+        "key": "FireRateWhileSliding",
+        "label": "Fire Rate While Sliding",
+        "value": "60%"
+      },
+      {
+        "key": "Radius",
+        "label": "Radius",
+        "value": "12m"
+      },
+      {
+        "key": "ProcCooldown",
+        "label": "Max Frequency",
+        "value": "0.3s"
+      }
+    ],
+    "icon": "brawl/electric_slippers_psd.png"
+  },
+  {
+    "id": "upgrade_eternal_gift",
+    "name": "Eternal Gift",
+    "category": "vitality",
+    "tier": 5,
+    "cost": 9999,
+    "mode": "street_brawl",
+    "active": false,
+    "description": "Periodically gain a random permanent stat buff.\n\nReduces your next death's respawn timer.",
+    "description_html": "Periodically gain a random permanent stat buff.<br><br>Reduces your next death's respawn timer.",
+    "stats": [
+      {
+        "key": "BuffFrequency",
+        "label": "Buff Frequency",
+        "value": "2s"
+      },
+      {
+        "key": "RespawnTime",
+        "label": "Respawn Time",
+        "value": "-70%"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "165s"
+      }
+    ],
+    "icon": "brawl/eternal_gift_psd.png"
+  },
+  {
+    "id": "upgrade_nullification_aura",
+    "name": "Nullification Burst",
+    "category": "vitality",
+    "tier": 5,
+    "cost": 9999,
+    "mode": "street_brawl",
+    "active": true,
+    "description": "Removes any positive buffs and prevents stamina usage and healing effects on enemies.",
+    "description_html": "Removes any positive buffs and prevents stamina usage and healing effects on enemies.",
+    "stats": [
+      {
+        "key": "StatusResistancePercent",
+        "label": "Debuff Resist",
+        "value": "+40%"
+      },
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+300"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "7s"
+      },
+      {
+        "key": "Damage",
+        "label": "Damage",
+        "value": "250"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "18s"
+      },
+      {
+        "key": "EndRadius",
+        "label": "End Radius",
+        "value": "20m"
+      }
+    ],
+    "icon": "brawl/nullification_aura_psd.png"
+  },
+  {
+    "id": "upgrade_icarus_wings",
+    "name": "Seraphim Wings",
+    "category": "vitality",
+    "tier": 5,
+    "cost": 9999,
+    "mode": "street_brawl",
+    "active": false,
+    "description": "When Airborne, You deal more damage and take reduced damage. Allows unlimited Air Dash and Jumping.",
+    "description_html": "When Airborne, You deal more damage and take reduced damage. Allows <span class=\"highlight\">unlimited</span> Air Dash and Jumping.",
+    "stats": [
+      {
+        "key": "StaminaCooldownReduction",
+        "label": "Stamina Recovery",
+        "value": "+120%"
+      },
+      {
+        "key": "GravityScale",
+        "label": "Gravity Scale",
+        "value": "-70%"
+      },
+      {
+        "key": "AirControlPercent",
+        "label": "Air Control",
+        "value": "+100%"
+      },
+      {
+        "key": "AirControlAccelPercent",
+        "label": "Air Acceleration",
+        "value": "+50%"
+      },
+      {
+        "key": "AirBonusDamageGiven",
+        "label": "In Air Damage",
+        "value": "+40%"
+      },
+      {
+        "key": "AirBonusDamageTaken",
+        "label": "In Air Damage Received",
+        "value": "-40%"
+      }
+    ],
+    "icon": "brawl/icarus_wings_psd.png"
+  },
+  {
+    "id": "upgrade_shadow_strike",
+    "name": "Shadow Strike",
+    "category": "vitality",
+    "tier": 5,
+    "cost": 9999,
+    "mode": "street_brawl",
+    "active": false,
+    "description": "Go Invisible on Stamina use with no detection range. Doing a melee attack while invisible will cause you to steal bullet and spirit resistance from them and deal damage over time.",
+    "description_html": "Go <span class=\"highlight\">Invisible</span> on <span class=\"highlight\">Stamina use</span> with no detection range. Doing a <span class=\"highlight\">melee attack</span> while invisible will cause you to <span class=\"highlight\">steal bullet and spirit resistance</span> from them and deal <span class=\"highlight\">damage over time</span>.",
+    "stats": [
+      {
+        "key": "Stamina",
+        "label": "Stamina",
+        "value": "+3"
+      },
+      {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": "+350"
+      },
+      {
+        "key": "DPS",
+        "label": "Damage Per Second",
+        "value": "125"
+      },
+      {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": "3s"
+      },
+      {
+        "key": "StealDuration",
+        "label": "Steal Duration",
+        "value": "6s"
+      },
+      {
+        "key": "ResistStealAmount",
+        "label": "Resist Stolen",
+        "value": "40%"
+      },
+      {
+        "key": "InvisFadeToDuration",
+        "label": "Fade Time",
+        "value": "0.2s"
+      }
+    ],
+    "icon": "brawl/shadow_strike_psd.png"
+  },
+  {
+    "id": "upgrade_eldritch_shot",
+    "name": "Haunting Shot",
+    "category": "weapon",
+    "tier": 5,
+    "cost": 9999,
+    "mode": "street_brawl",
+    "active": false,
+    "description": "Your next bullet applies a powerful debuff reducing the enemy's damage output, healing and movement speed. It also deals Bonus Spirit Damage based on the target's current Health. \n\nThe bullet is larger and penetrates through targets.",
+    "description_html": "Your next bullet applies a powerful debuff reducing the enemy's damage output, healing and movement speed. It also deals Bonus Spirit Damage based on the target's current Health. <br><br>The bullet is larger and penetrates through targets.",
+    "stats": [
+      {
+        "key": "HealthPctDamage",
+        "label": "Current Health Damage",
+        "value": "10%"
+      },
+      {
+        "key": "OutgoingDamagePenaltyPercent",
+        "label": "Damage Penalty",
+        "value": "-40%"
+      },
+      {
+        "key": "HealAmpReceivePenaltyPercent",
+        "label": "Incoming Healing",
+        "value": "-40%"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "2.5s"
+      },
+      {
+        "key": "BulletRadius",
+        "label": "Bullet Radius",
+        "value": "1.5m"
+      },
+      {
+        "key": "DebuffDuration",
+        "label": "Debuff Duration",
+        "value": "4s"
+      },
+      {
+        "key": "MovementSpeedSlow",
+        "label": "Move Speed",
+        "value": "32%"
+      },
+      {
+        "key": "GroundDashReductionPercent",
+        "label": "Dash Distance",
+        "value": "-36%"
+      }
+    ],
+    "icon": "brawl/eldritch_shot_psd.png"
+  },
+  {
+    "id": "upgrade_infinite_rounds",
+    "name": "Infinite Rounds",
+    "category": "weapon",
+    "tier": 5,
+    "cost": 9999,
+    "mode": "street_brawl",
+    "active": false,
+    "description": "Your Bullets have a chance to become unavoidable, piercing through enemies and ignoring their Bullet Resistance.\n\nYou have infinite ammo.",
+    "description_html": "Your Bullets have a chance to become unavoidable, <span class=\"highlight\">piercing through</span> enemies and <span class=\"highlight\">ignoring their Bullet Resistance</span>.<br><br>You have <span class=\"highlight\">infinite</span> ammo.",
+    "stats": [
+      {
+        "key": "BonusBulletSpeedPercent",
+        "label": "Bullet Velocity",
+        "value": "+200%"
+      },
+      {
+        "key": "BonusFireRate",
+        "label": "Fire Rate",
+        "value": "+35%"
+      },
+      {
+        "key": "ProcChance",
+        "label": "Proc Chance",
+        "value": "65%"
+      }
+    ],
+    "icon": "brawl/infinite_rounds_psd.png"
+  },
+  {
+    "id": "upgrade_runed_gauntlets",
+    "name": "Runed Gauntlets",
+    "category": "weapon",
+    "tier": 5,
+    "cost": 9999,
+    "mode": "street_brawl",
+    "active": false,
+    "description": "Pierces through parry.\n\nEvery time you land a heavy melee, your existing cooldowns get reduced.",
+    "description_html": "Pierces through parry.<br><br>Every time you land a heavy melee, your existing cooldowns get reduced.",
+    "stats": [
+      {
+        "key": "MeleeDistanceScale",
+        "label": "Heavy Melee Distance",
+        "value": "150%"
+      },
+      {
+        "key": "MeleeResistPercent",
+        "label": "Melee Resist",
+        "value": "+50%"
+      },
+      {
+        "key": "BonusMeleeDamagePercent",
+        "label": "Melee Damage",
+        "value": "+30%"
+      },
+      {
+        "key": "AbilityCooldown",
+        "label": "Cooldown",
+        "value": "10s"
+      },
+      {
+        "key": "CooldownReductionOnHitPct",
+        "label": "Cooldown Reduction on Hit",
+        "value": "16%"
+      },
+      {
+        "key": "CooldownReductionOnHitMin",
+        "label": "Min Reduction",
+        "value": "4s"
+      }
+    ],
+    "icon": "brawl/runed_gauntlets_psd.png"
+  }
+]

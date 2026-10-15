@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deadlock Item List</title>
+<link rel="stylesheet" href="common.css">
+<style>
+
+  .category { margin-top: 10px; --accent: var(--cat); }
+  .category.weapon { --cat: var(--weapon); }
+  .category.vitality { --cat: var(--vitality); }
+  .category.spirit { --cat: var(--spirit); }
+  .category > h2 {
+    font-size: 22px; margin: 0 0 4px; color: var(--cat);
+    border-bottom: 2px solid var(--cat); padding-bottom: 6px;
+  }
+  .category > h2 small { color: var(--muted); font-size: 14px; font-weight: 400; margin-left: 8px; }
+  .tier h3 { font-size: 15px; color: var(--muted); font-weight: 600; margin: 18px 0 10px; }
+  .tier h3 b { color: var(--text); }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); gap: 12px; }
+  .tile {
+    display: flex; flex-direction: column; align-items: center; gap: 6px;
+    background: none; border: 0; padding: 6px; border-radius: 10px;
+    color: var(--text); font: inherit; cursor: pointer; text-align: center;
+  }
+  .tile:hover, .tile:focus-visible { background: var(--panel); outline: none; }
+  .tile img {
+    width: 84px; height: 84px; border-radius: 10px; background: var(--panel-2);
+    border: 2px solid transparent; transition: border-color .12s, transform .12s;
+  }
+  .tile:hover img, .tile:focus-visible img { border-color: var(--cat); transform: translateY(-2px); }
+  .tile span { font-size: 13px; line-height: 1.25; }
+  .tile .badge { font-size: 11px; color: var(--muted); }
+
+  dialog {
+    background: var(--panel); color: var(--text); border: 1px solid var(--border);
+    border-top: 4px solid var(--cat, var(--text)); border-radius: 12px;
+    padding: 20px; width: min(560px, calc(100vw - 32px)); max-height: calc(100vh - 48px);
+  }
+  dialog.weapon { --cat: var(--weapon); }
+  dialog.vitality { --cat: var(--vitality); }
+  dialog.spirit { --cat: var(--spirit); }
+  dialog::backdrop { background: rgb(0 0 0 / .65); }
+  .d-top { display: flex; gap: 16px; align-items: center; margin-bottom: 14px; }
+  .d-top img { width: 112px; height: 112px; border-radius: 10px; flex: none; }
+  .d-name { font-size: 22px; font-weight: 700; margin: 0; }
+  .d-meta { color: var(--muted); font-size: 14px; }
+  .d-meta .cat { color: var(--cat); font-weight: 600; text-transform: capitalize; }
+  .d-desc { font-size: 15px; }
+  .d-desc .highlight { color: var(--cat); font-weight: 600; }
+  .d-desc .diminish { color: var(--muted); font-size: 14px; }
+  .d-stats { display: flex; flex-wrap: wrap; gap: 6px; margin: 14px 0 0; padding: 0; list-style: none; }
+  .d-stats li { background: var(--panel-2); border: 1px solid var(--border); border-radius: 6px; padding: 2px 8px; font-size: 13px; }
+  .d-stats b { color: var(--cat); }
+  .close {
+    position: absolute; top: 10px; right: 12px; background: none; border: 0;
+    color: var(--muted); font-size: 22px; cursor: pointer; line-height: 1;
+  }
+  .close:hover { color: var(--text); }
+
+  @media (max-width: 520px) {
+    .grid { grid-template-columns: repeat(auto-fill, minmax(84px, 1fr)); gap: 8px; }
+    .tile img { width: 68px; height: 68px; }
+    .d-top img { width: 80px; height: 80px; }
+  }
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="bar">
+    <h1><a href="items.html">Deadlock Items</a></h1>
+    <nav><a href="items.html" aria-current="page">Item list</a><a href="index.html">Quiz</a></nav>
+  </div>
+</header>
+<main>
+  <div class="toolbar">
+    <div class="filters">
+      <button class="chip" id="brawl" aria-pressed="false">Include Street Brawl</button>
+    </div>
+  </div>
+
+  <div id="list"></div>
+  <div class="error" id="error" hidden></div>
+</main>
+
+<dialog id="detail">
+  <button class="close" id="close" aria-label="Close">×</button>
+  <div class="d-top">
+    <img id="d-icon" alt="">
+    <div>
+      <p class="d-name" id="d-name"></p>
+      <div class="d-meta" id="d-meta"></div>
+    </div>
+  </div>
+  <div class="d-desc" id="d-desc"></div>
+  <ul class="d-stats" id="d-stats"></ul>
+</dialog>
+
+<script>
+const $ = (id) => document.getElementById(id);
+const CATEGORIES = [
+  ["vitality", "Vitality"],
+  ["spirit", "Spirit"],
+  ["weapon", "Weapon"],
+];
+
+let all = [];
+let showBrawl = false;
+
+// description_html comes from the game's own localization files; keep only the
+// tags it uses (<span class="highlight|diminish"> and <br>) and escape the rest.
+function safeDescHtml(html) {
+  const tmp = document.createElement("div");
+  tmp.textContent = html;
+  return tmp.innerHTML
+    .replace(/&lt;br\s*\/?&gt;/g, "<br>")
+    .replace(/&lt;span class="(highlight|diminish)"&gt;/g, '<span class="$1">')
+    .replace(/&lt;\/span&gt;/g, "</span>");
+}
+
+function render() {
+  const list = $("list");
+  list.innerHTML = "";
+  const items = all.filter((i) => showBrawl || i.mode === "standard");
+
+  for (const [cat, label] of CATEGORIES) {
+    const inCat = items.filter((i) => i.category === cat);
+    if (!inCat.length) continue;
+
+    const section = document.createElement("section");
+    section.className = `category ${cat}`;
+    section.innerHTML = `<h2>${label}<small>${inCat.length} items</small></h2>`;
+
+    const costs = [...new Set(inCat.map((i) => i.cost))].sort((a, b) => a - b);
+    for (const cost of costs) {
+      const group = inCat
+        .filter((i) => i.cost === cost)
+        .sort((a, b) => a.name.localeCompare(b.name));
+      const tier = document.createElement("div");
+      tier.className = "tier";
+      tier.innerHTML = `<h3><b>${cost.toLocaleString()} souls</b> · Tier ${group[0].tier}</h3>`;
+      const grid = document.createElement("div");
+      grid.className = "grid";
+      for (const item of group) grid.appendChild(tile(item));
+      tier.appendChild(grid);
+      section.appendChild(tier);
+    }
+    list.appendChild(section);
+  }
+}
+
+function tile(item) {
+  const b = document.createElement("button");
+  b.className = "tile";
+  b.title = item.name;
+  const img = document.createElement("img");
+  img.src = item.icon;
+  img.alt = "";
+  img.loading = "lazy";
+  const name = document.createElement("span");
+  name.textContent = item.name;
+  b.append(img, name);
+  if (item.active || item.mode !== "standard") {
+    const badge = document.createElement("span");
+    badge.className = "badge";
+    badge.textContent = [item.active && "Active", item.mode !== "standard" && "Street Brawl"].filter(Boolean).join(" · ");
+    b.appendChild(badge);
+  }
+  b.addEventListener("click", () => openDetail(item));
+  return b;
+}
+
+function openDetail(item) {
+  const d = $("detail");
+  d.className = item.category;
+  $("d-icon").src = item.icon;
+  $("d-name").textContent = item.name;
+  $("d-meta").innerHTML = "";
+  const cat = document.createElement("span");
+  cat.className = "cat";
+  cat.textContent = item.category;
+  $("d-meta").append(
+    cat,
+    ` · Tier ${item.tier} · ${item.cost.toLocaleString()} souls` +
+      (item.active ? " · Active" : "") +
+      (item.mode !== "standard" ? " · Street Brawl" : "")
+  );
+  $("d-desc").innerHTML = item.description_html
+    ? safeDescHtml(item.description_html)
+    : '<span class="diminish">Stat-only item (no description in game).</span>';
+  $("d-stats").innerHTML = "";
+  for (const s of item.stats) {
+    const li = document.createElement("li");
+    const b = document.createElement("b");
+    b.textContent = s.value;
+    li.append(b, " " + s.label);
+    $("d-stats").appendChild(li);
+  }
+  d.showModal();
+}
+
+$("close").addEventListener("click", () => $("detail").close());
+// Click on the backdrop (outside the dialog box) closes it.
+$("detail").addEventListener("click", (e) => {
+  const r = e.currentTarget.getBoundingClientRect();
+  if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) e.currentTarget.close();
+});
+
+$("brawl").addEventListener("click", (e) => {
+  showBrawl = !showBrawl;
+  e.currentTarget.setAttribute("aria-pressed", String(showBrawl));
+  render();
+});
+
+fetch("items.json")
+  .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+  .then((items) => {
+    all = items.filter((i) => i.icon);
+    all.forEach((i) => (i.icon = encodeURI(i.icon)));
+    render();
+  })
+  .catch(() => {
+    $("error").textContent = "Couldn't load items.json. Serve this folder over HTTP (e.g. `python3 -m http.server 8765`) instead of opening the file directly.";
+    $("error").hidden = false;
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deadlock Item Quiz</title>
+<link rel="stylesheet" href="common.css">
+<style>
+  .quiz { max-width: 760px; margin: 0 auto; }
+  .score { color: var(--muted); font-variant-numeric: tabular-nums; }
+  .score b { color: var(--text); }
+
+  .card { background: var(--panel); border: 1px solid var(--border); border-top: 4px solid var(--accent); border-radius: 12px; padding: 20px; }
+  .card.weapon { --accent: var(--weapon); }
+  .card.vitality { --accent: var(--vitality); }
+  .card.spirit { --accent: var(--spirit); }
+
+  .top { display: flex; gap: 20px; align-items: center; margin-bottom: 18px; }
+  .icon { width: 128px; height: 128px; border-radius: 10px; flex: none; background: var(--panel-2); }
+  .meta { color: var(--muted); font-size: 14px; }
+  .meta .cat { color: var(--accent); font-weight: 600; text-transform: capitalize; }
+  .item-name { font-size: 24px; font-weight: 700; margin: 4px 0; min-height: 36px; }
+  .prompt { font-weight: 600; margin: 0 0 10px; }
+
+  .choices { display: grid; gap: 10px; }
+  .choice {
+    display: flex; gap: 12px; align-items: flex-start; text-align: left;
+    background: var(--panel-2); color: var(--text); border: 1px solid var(--border);
+    border-radius: 10px; padding: 12px 14px; cursor: pointer; font: inherit; white-space: pre-line;
+  }
+  .choice:hover:not(:disabled) { border-color: var(--accent); }
+  .choice:disabled { cursor: default; }
+  .choice .key { flex: none; color: var(--muted); font-size: 13px; border: 1px solid var(--border); border-radius: 5px; padding: 0 6px; margin-top: 2px; }
+  .choice.wrong { border-color: var(--bad); opacity: .55; text-decoration: line-through; text-decoration-color: var(--bad); }
+  .choice.right { border-color: var(--good); background: color-mix(in srgb, var(--good) 15%, var(--panel-2)); }
+  .choice.desc { font-size: 14px; }
+
+  .reveal { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--border); }
+  .stats { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 0; padding: 0; list-style: none; }
+  .stats li { background: var(--panel-2); border: 1px solid var(--border); border-radius: 6px; padding: 2px 8px; font-size: 13px; }
+  .stats b { color: var(--accent); }
+  .full-desc { white-space: pre-line; font-size: 15px; }
+  .actions { display: flex; justify-content: space-between; align-items: center; margin-top: 16px; gap: 12px; }
+  .feedback { color: var(--muted); font-size: 14px; }
+  .next {
+    background: var(--accent); color: #14110f; border: 0; border-radius: 8px; padding: 10px 18px;
+    font: inherit; font-weight: 700; cursor: pointer;
+  }
+  .hint { color: var(--muted); font-size: 13px; margin-top: 14px; text-align: center; }
+
+  @media (max-width: 520px) {
+    .top { flex-direction: column; align-items: flex-start; }
+    .icon { width: 96px; height: 96px; }
+  }
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="bar">
+    <h1><a href="items.html">Deadlock Items</a></h1>
+    <nav><a href="items.html">Item list</a><a href="index.html" aria-current="page">Quiz</a></nav>
+  </div>
+</header>
+<main>
+<div class="quiz">
+  <div class="toolbar">
+    <div class="filters" id="filters">
+      <button class="chip" data-cat="vitality" aria-pressed="true">Vitality</button>
+      <button class="chip" data-cat="spirit" aria-pressed="true">Spirit</button>
+      <button class="chip" data-cat="weapon" aria-pressed="true">Weapon</button>
+      <button class="chip" data-brawl aria-pressed="false">Include Street Brawl</button>
+    </div>
+    <div class="score">First-try <b id="first">0</b> / <b id="seen">0</b> &nbsp;·&nbsp; Streak <b id="streak">0</b> &nbsp;·&nbsp; Left <b id="left">0</b></div>
+  </div>
+
+  <section class="card" id="card" hidden>
+    <div class="top">
+      <img class="icon" id="icon" alt="Item icon">
+      <div>
+        <div class="meta"><span class="cat" id="cat"></span> · Tier <span id="tier"></span> · <span id="cost"></span> souls<span id="active"></span></div>
+        <div class="item-name" id="name">???</div>
+      </div>
+    </div>
+
+    <p class="prompt" id="prompt"></p>
+    <div class="choices" id="choices"></div>
+
+    <div class="reveal" id="reveal" hidden>
+      <div class="full-desc" id="fullDesc"></div>
+      <ul class="stats" id="stats"></ul>
+      <div class="actions">
+        <span class="feedback" id="feedback"></span>
+        <button class="next" id="next">Next →</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="error" id="error" hidden></div>
+  <p class="hint">Keys: 1 / 2 / 3 to answer · Enter for next. Items you miss come back a few cards later.</p>
+</div>
+</main>
+
+<script>
+const $ = (id) => document.getElementById(id);
+const shuffle = (a) => { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+let all = [];
+let pool = [];
+let queue = [];
+let current = null;
+let step = "name";       // "name" | "desc" | "done"
+let missed = false;      // any wrong answer on the current item
+let stats = { seen: 0, first: 0, streak: 0 };
+
+const filters = { cats: new Set(["weapon", "vitality", "spirit"]), brawl: false };
+
+// Stat-only items have no description text; use their stat line instead.
+function descOf(item) {
+  if (item.description) return item.description.replace(new RegExp(escapeRe(item.name), "gi"), "this item");
+  return item.stats.map((s) => `${s.value} ${s.label}`).join(" · ");
+}
+
+function rebuildPool() {
+  pool = all.filter((i) => filters.cats.has(i.category) && (filters.brawl || i.mode === "standard"));
+  queue = shuffle([...pool]);
+  next();
+}
+
+function pickDistractors(item, keyFn) {
+  const sameCat = pool.filter((i) => i.category === item.category && i.id !== item.id);
+  const fallback = all.filter((i) => i.category === item.category && i.id !== item.id);
+  const used = new Set([keyFn(item)]);
+  const out = [];
+  for (const candidate of [...shuffle(sameCat), ...shuffle(fallback)]) {
+    const k = keyFn(candidate);
+    if (used.has(k)) continue;
+    used.add(k);
+    out.push(candidate);
+    if (out.length === 2) break;
+  }
+  return out;
+}
+
+function renderChoices(options, labelFn, correctId, isDesc) {
+  const box = $("choices");
+  box.innerHTML = "";
+  options.forEach((opt, idx) => {
+    const b = document.createElement("button");
+    b.className = "choice" + (isDesc ? " desc" : "");
+    b.dataset.id = opt.id;
+    b.innerHTML = `<span class="key">${idx + 1}</span><span></span>`;
+    b.lastChild.textContent = labelFn(opt);
+    b.addEventListener("click", () => answer(b, opt.id === correctId));
+    box.appendChild(b);
+  });
+}
+
+function answer(btn, correct) {
+  if (btn.disabled || step === "done") return;
+  if (!correct) {
+    btn.classList.add("wrong");
+    btn.disabled = true;
+    missed = true;
+    return;
+  }
+  btn.classList.add("right");
+  document.querySelectorAll(".choice").forEach((b) => (b.disabled = true));
+  if (step === "name") {
+    $("name").textContent = current.name;
+    setTimeout(askDescription, 450);
+  } else {
+    finish();
+  }
+}
+
+function askDescription() {
+  step = "desc";
+  $("prompt").textContent = "Which description matches?";
+  const options = shuffle([current, ...pickDistractors(current, descOf)]);
+  renderChoices(options, descOf, current.id, true);
+}
+
+function finish() {
+  step = "done";
+  stats.seen++;
+  if (missed) {
+    stats.streak = 0;
+    // Bring missed items back 3–6 cards later.
+    const at = Math.min(queue.length, 3 + Math.floor(Math.random() * 4));
+    queue.splice(at, 0, current);
+  } else {
+    stats.first++;
+    stats.streak++;
+  }
+  $("feedback").textContent = missed ? "Missed one — this item will come back soon." : "Clean! Both right on the first try.";
+  $("fullDesc").textContent = current.description || "Stat-only item (no description in game).";
+  $("stats").innerHTML = "";
+  current.stats.forEach((s) => {
+    const li = document.createElement("li");
+    li.innerHTML = "<b></b> ";
+    li.firstChild.textContent = s.value;
+    li.append(s.label);
+    $("stats").appendChild(li);
+  });
+  $("reveal").hidden = false;
+  updateScore();
+  $("next").focus();
+}
+
+function updateScore() {
+  $("first").textContent = stats.first;
+  $("seen").textContent = stats.seen;
+  $("streak").textContent = stats.streak;
+  $("left").textContent = queue.length;
+}
+
+function next() {
+  if (!pool.length) {
+    $("card").hidden = true;
+    showError("No items match these filters — turn a category back on.");
+    return;
+  }
+  $("error").hidden = true;
+  if (!queue.length) queue = shuffle([...pool]);
+  current = queue.shift();
+  step = "name";
+  missed = false;
+
+  const card = $("card");
+  card.hidden = false;
+  card.className = "card " + current.category;
+  $("icon").src = current.icon;
+  $("cat").textContent = current.category;
+  $("tier").textContent = current.tier;
+  $("cost").textContent = current.cost.toLocaleString();
+  $("active").textContent = current.active ? " · Active" : "";
+  $("name").textContent = "???";
+  $("reveal").hidden = true;
+  $("prompt").textContent = "What's this item called?";
+  const options = shuffle([current, ...pickDistractors(current, (i) => i.name)]);
+  renderChoices(options, (i) => i.name, current.id, false);
+  updateScore();
+}
+
+function showError(msg) {
+  $("error").textContent = msg;
+  $("error").hidden = false;
+}
+
+$("next").addEventListener("click", next);
+
+$("filters").addEventListener("click", (e) => {
+  const chip = e.target.closest(".chip");
+  if (!chip) return;
+  const on = chip.getAttribute("aria-pressed") !== "true";
+  chip.setAttribute("aria-pressed", String(on));
+  if (chip.dataset.cat) on ? filters.cats.add(chip.dataset.cat) : filters.cats.delete(chip.dataset.cat);
+  else filters.brawl = on;
+  rebuildPool();
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.ctrlKey || e.metaKey || e.altKey) return;
+  if (step === "done" && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); next(); return; }
+  const n = Number(e.key);
+  if (n >= 1 && n <= 3) {
+    const btn = document.querySelectorAll(".choice")[n - 1];
+    if (btn) btn.click();
+  }
+});
+
+fetch("items.json")
+  .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+  .then((items) => {
+    all = items.filter((i) => i.icon);
+    all.forEach((i) => (i.icon = encodeURI(i.icon)));
+    rebuildPool();
+  })
+  .catch(() => showError("Couldn't load items.json. Serve this folder over HTTP (e.g. `python3 -m http.server 8000`) instead of opening the file directly."));
+</script>
+</body>
+</html>

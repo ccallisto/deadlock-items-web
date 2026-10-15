@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+
+# Local build scratch (extracted game files, converter downloads)
+work/
+*.vtex_c
+*.vdata_c
+*.kv3
+
+# Deploy tooling
+.wrangler/
+node_modules/
+.env
+
+# Editor / OS
+.vscode/
+*.swp
+.DS_Store
